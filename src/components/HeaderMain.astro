@@ -24,7 +24,7 @@ const { settings } = Astro.props
       <!-- Links -->
       { settings.nav.map( item =>
 
-        <a class="bs-btn !bg-transparent before:translate-y-full hover:before:translate-y-0" href={item.link}>
+        <a class="bs-btn bg-transparent! before:translate-y-full hover:before:translate-y-0" href={item.link}>
           { item.title }
         </a>
 
