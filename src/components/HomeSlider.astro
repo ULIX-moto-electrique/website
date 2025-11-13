@@ -1,13 +1,13 @@
 ---
 
-const { title, slider } = Astro.props
+const { title, subtitle, slider } = Astro.props
 
 ---
 
 <section id="slider" class="relative">
 
   <!-- Slides -->
-  <div class="js-fc-swiper swiper select-none bs-container bs-mt-md">
+  <div class="js-fc-swiper swiper select-none bs-container max-w-4xl bs-mt-md">
     <div class="swiper-wrapper">
 
       { slider.map( item =>
@@ -15,11 +15,11 @@ const { title, slider } = Astro.props
       // Slides
       <div class="swiper-slide bg-bs-surface-0 border border-bs-surface-3 rounded-xl overflow-hidden h-auto!">
 
-        <figure class="relative flex flex-col gap-6 isolate min-h-[40vh] md:min-h-[40rem] h-full">
+        <figure class="relative flex flex-col gap-6 isolate w-full aspect-video">
 
           {/* BG image */}
           <img src={ item.image } alt={ item.image_alt } loading="lazy"
-            class="opacity-20 md:opacity-80 rounded-xl grayscale overflow-hidden w-full h-full object-cover object-left absolute inset-0"
+            class="opacity-80 rounded-xl grayscale overflow-hidden w-full h-full object-cover object-left absolute inset-0"
             height="1024" width="768" />
 
         </figure>
@@ -34,7 +34,8 @@ const { title, slider } = Astro.props
   {/* Centered overlay title */}
   <div class="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
     <div class="bg-black/60 rounded-xl text-white px-8 py-5 max-w-3xl text-center">
-      <h2 class="text-4xl font-semibold leading-snug">{title}</h2>
+      <h1 class="bs-h1 leading-snug">{title}</h1>
+      <h2 class="bs-h2 leading-snug">{subtitle}</h2>
     </div>
   </div>
 

@@ -1,7 +1,8 @@
 {
   "hero_title": "ULIX",
   "hero_content": "<p><strong>A free Astro landing theme made with Tailwind</strong> to help kick start your Astro website.</p><p>Uses modern CSS and HTML features for added zip, plus a slick swiper carousel. All in Astro JSX.</p>",
-  "slider_title": "Our services",
+  "slider_title": "ULIX Moto Électrique",
+  "slider_subtitle": "Club de moto électrique de l'Université Laval",
   "clients_title": "Trusted by some great companies",
   "testimonials_title": "Clients ♥ us",
   "case_studies_title": "Case studies",
