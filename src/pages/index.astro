@@ -26,16 +26,15 @@ import testimonials from "../data/testimonials.json"
 
 <Layout title={ global_settings.title }>
 
-  <!-- <HeroSection
-    content={ home.hero_content }
-    settings={ global_settings }
-    title={ home.hero_title }
-  /> -->
-
   <HomeSlider
     title={ home.slider_title }
     subtitle={ home.slider_subtitle }
     slider_img={ slider_img }
+  />
+
+  <HeroSection
+    title={ home.about_title }
+    content={ home.about_content }
   />
 
   <ClientsSection

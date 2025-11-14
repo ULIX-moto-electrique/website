@@ -2,7 +2,7 @@
 
 /* Containers */
 .bs-container {
-  inline-size: min(92vw, 90rem);
+  inline-size: min(92vw, 70rem);
   margin-inline: auto;
 }
 
