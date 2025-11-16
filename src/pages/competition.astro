@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import global_settings from "../data/global_settings.json";
+import competition from "../data/competition.json";
+---
+
+<Layout title={ global_settings.title }>
+
+<div class="bs-container bs-mt-lg flex flex-col gap-6">
+
+    <!-- Title -->
+    <h1 class="bs-h1">{ competition.title }</h1> 
+
+    <!-- Content -->
+    <div class="bs-body-text xl:text-xl flex flex-col gap-4">
+
+      { competition.content_list.map( content => (
+
+        <p set:html={ content }></p>
+
+        )) }
+
+    </div>
+
+</div>
+
+</Layout>
