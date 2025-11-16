@@ -15,26 +15,37 @@ const { title, members } = Astro.props
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
       { members.map( member => (
-        <article class="flex flex-col items-center text-center p-6">
-          <img
-            src={ member.photo }
-            alt={ `Portrait de ${member.name}` }
-            class="w-48 h-48 rounded-full object-cover mb-4 ring-2 ring-gray-300"
-            loading="lazy"
-          />
+        <article class="flex items-start justify-center p-6">
+          <div class="flex flex-col items-center justify-center w-fit">
+            <img
+              src={ member.photo }
+              alt={ `Portrait de ${member.name}` }
+              class="w-32 h-32 rounded-full object-cover mb-4 ring-2 ring-gray-300"
+              loading="lazy"
+              />
 
-          <div class="mb-2">
-            <h3 class="bs-h3 font-bold">{ member.name }</h3>
-            <h4 class="bs-h4">{ member.role }</h4>
+            {/* Content under picture */}
+            <div class="flex flex-row items-center justify-around">
+              {/* Name and role */}
+              <div class="flex flex-col items-start">
+                <h3 class="bs-h3 font-bold">{ member.name }</h3>
+                <h4 class="bs-h4 text-gray-300">{ member.role }</h4>
+              </div>
+
+              {/* Email icon */}
+              <a
+                class="ms-5 inline-flex items-center justify-center w-10 h-10 rounded-full text-white hover:scale-80 transition-transform duration-200"
+                href={ `mailto:${member.email}` }
+                aria-label={ `Envoyer un courriel à ${member.name}` }
+                title={ `Envoyer un courriel à ${member.name}` }
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.5v7A2.5 2.5 0 0 0 5.5 18h13A2.5 2.5 0 0 0 21 15.5v-7A2.5 2.5 0 0 0 18.5 6h-13A2.5 2.5 0 0 0 3 8.5z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.5l-9 6-9-6" />
+                </svg>
+              </a>
+            </div>
           </div>
-
-          <a
-            class="mt-auto inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
-            href={ `mailto:${member.email}` }
-            aria-label={ `Envoyer un courriel à ${member.name}` }
-          >
-            Envoyer un courriel
-          </a>
         </article>
       )) }
 
