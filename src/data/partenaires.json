@@ -1,0 +1,75 @@
+{
+  "title": "Partenaires",
+  "partners": [
+    {
+      "title": "Platine",
+      "list": [
+        {
+          "title": "Agnico Eagle",
+          "image": "/logos-partenaires/agnico-eagle.svg",
+          "link": "https://www.agnicoeagle.com/French/overview/default.aspx"
+        },
+        {
+          "title": "AESGUL",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://www.aesgul.com/"
+        },
+        {
+          "title": "Université Laval",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://www.ulaval.ca/"
+        },
+        {
+          "title": "simard Suspensions Inc.",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://www.simardsuspensions.com/en/"
+        }
+      ]
+    },
+    {
+      "title": "Or",
+      "list": [
+        {
+          "title": "onshape",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://www.onshape.com/fr/"
+        },
+        {
+          "title": "Placeholder",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://placehold.co/"
+        }
+      ]
+    },
+    {
+      "title": "Argent",
+      "list": [
+        {
+          "title": "Placeholder",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://placehold.co/"
+        },
+        {
+          "title": "Placeholder",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://placehold.co/"
+        }
+      ]
+    },
+    {
+      "title": "Bronze",
+      "list": [
+        {
+          "title": "Placeholder",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://placehold.co/"
+        },
+        {
+          "title": "Placeholder",
+          "image": "/logos-partenaires/placeholder.svg",
+          "link": "https://placehold.co/"
+        }
+      ]
+    }
+  ]
+}

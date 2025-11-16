@@ -1,0 +1,43 @@
+---
+
+import Layout from "../layouts/Layout.astro"
+
+import global_settings from "../data/global_settings.json";
+import partenaires from "../data/partenaires.json"
+
+---
+
+<Layout title={ global_settings.title + " - Partenaires" }>
+
+  <section class="bs-container bs-mt-md">
+
+    <!-- Title -->
+    <h1 class="bs-h1">{ partenaires.title }</h1> 
+
+    <!-- Section de partenaire -->
+    { partenaires.partners.map((tier) => (
+      <div class="my-8 p-6 rounded-lg bg-white/70 shadow-md">
+
+        <h2 class="bs-h2 mb-4">{ tier.title }</h2>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 ">
+
+          { tier.list.map((p) => (
+            <a
+              class="w-80 flex items-center justify-center no-underline p-6 hover:-translate-y-1 transition-all overflow-hidden"
+              href={ p.link }
+              target="_blank"
+              rel="noopener noreferrer">
+
+              <img class="max-w-full h-20 object-contain mb-2" src={p.image} alt={p.title} loading="lazy" />
+            </a>
+          )) }
+
+        </div>
+
+      </div>
+    )) }
+
+  </section>
+
+</Layout>
