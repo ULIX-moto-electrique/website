@@ -10,16 +10,20 @@
       "link": "/#about"
     },
     {
-      "title": "Comité administratif",
-      "link": "/#comite"
-    },
-    {
-      "title": "La compétition",
-      "link": "/competition"
+      "title": "Projets",
+      "link": "/#projets"
     },
     {
       "title": "Partenaires",
-      "link": "/partenaires"
+      "link": "/#partenaires"
+    },
+    {
+      "title": "Comité",
+      "link": "/#comite"
+    },
+    {
+      "title": "Compétition",
+      "link": "/#competition"
     }
   ],
 
