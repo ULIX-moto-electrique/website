@@ -1,13 +1,15 @@
 ---
+
 import Layout from "../layouts/Layout.astro";
 
 import global_settings from "../data/global_settings.json";
 import competition from "../data/competition.json";
+
 ---
 
 <Layout title={ global_settings.title }>
 
-<div class="bs-container bs-mt-lg flex flex-col gap-6">
+  <div class="bs-container bs-mt-lg flex flex-col gap-6">
 
     <!-- Title -->
     <h1 class="bs-h1">{ competition.title }</h1> 
@@ -15,14 +17,22 @@ import competition from "../data/competition.json";
     <!-- Content -->
     <div class="bs-body-text xl:text-xl flex flex-col gap-4">
 
-      { competition.content_list.map( content => (
+      { competition.paragraphs.map( content => (
 
         <p set:html={ content }></p>
 
-        )) }
+      )) }
 
     </div>
 
-</div>
+    <div class="flex flex-wrap items-center justify-center mt-8 gap-16">
+
+      { competition.images.map( ({image, image_alt}) => (
+          <img src={ image } alt={ image_alt } class="w-48 h-48 rounded-full object-cover" />
+      )) }
+
+    </div>
+
+  </div>
 
 </Layout>

@@ -6,10 +6,10 @@ const { settings } = Astro.props
 
 ---
 
-<footer class="@container bs-container my-24 font-semibold text-bs-foreground-dark [&_a]:hover:text-bs-foreground-light [&_a]:transition-color [&_a]:duration-150" id="contact">
+<footer class="@container bs-container mt-24 mb-8 font-semibold text-bs-foreground-dark [&_a]:hover:text-bs-foreground-light [&_a]:transition-color [&_a]:duration-150" id="contact">
 
   <!-- Wrapper -->
-  <div class="bg-bs-surface-2 p-6 md:p-16 rounded-xl flex justify-between gap-8">
+  <div class="bg-bs-surface-2 p-4 md:p-8 rounded-xl flex justify-between gap-8">
 
       <!-- Left col -->
       <div class="w-max flex flex-col gap-8 md:gap-0 justify-between text-bs-foreground-light">
@@ -27,7 +27,7 @@ const { settings } = Astro.props
       <div class="flex gap-10 md:gap-2 lg:gap-20 md:justify-end [&_a]:block md:[&_a]:px-5 [&_a]:py-2">
 
         <!-- Nav -->
-        <nav class="flex flex-col">
+        <!-- <nav class="flex flex-col">
 
           { settings.nav.sort((a,b) => a.title.localeCompare(b.title)).map( item =>
 
@@ -37,7 +37,7 @@ const { settings } = Astro.props
 
           )}
 
-        </nav>
+        </nav> -->
 
         <!-- Social links -->
         <nav class="flex flex-col">
