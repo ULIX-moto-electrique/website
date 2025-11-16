@@ -1,6 +1,5 @@
 {
-  "name": "blackspike-astro-landing-page",
-  "type": "module",
+  "name": "ulix-landing-page",
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev --host",
