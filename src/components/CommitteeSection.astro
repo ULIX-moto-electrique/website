@@ -1,0 +1,44 @@
+---
+
+const { title, members } = Astro.props
+
+---
+
+<section id="comite">
+
+  <!-- Content -->
+  <div class="bs-container bs-mt-lg flex flex-col gap-6">
+
+    <!-- Title -->
+    <h1 class="bs-h1">{ title }</h1> 
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      { members.map( member => (
+        <article class="flex flex-col items-center text-center p-6">
+          <img
+            src={ member.photo }
+            alt={ `Portrait de ${member.name}` }
+            class="w-48 h-48 rounded-full object-cover mb-4 ring-2 ring-gray-300"
+            loading="lazy"
+          />
+
+          <div class="mb-2">
+            <h3 class="bs-h3 font-bold">{ member.name }</h3>
+            <h4 class="bs-h4">{ member.role }</h4>
+          </div>
+
+          <a
+            class="mt-auto inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            href={ `mailto:${member.email}` }
+            aria-label={ `Envoyer un courriel à ${member.name}` }
+          >
+            Envoyer un courriel
+          </a>
+        </article>
+      )) }
+
+    </div>
+  </div>
+
+</section>

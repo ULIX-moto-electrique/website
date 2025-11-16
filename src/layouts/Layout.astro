@@ -13,7 +13,6 @@ import bg_image from "../assets/theme-images/Boulons.png"
 
 import global_settings from "../data/global_settings.json"
 
-import DialogModal from "../components/DialogModal.astro"
 import FooterMain from "../components/FooterMain.astro"
 import HeaderMain from "../components/HeaderMain.astro"
 
@@ -54,7 +53,7 @@ const { title, description } = Astro.props
     <a class="fixed -top-20 focus-visible:top-0 p-3 bg-black/90 transition-all duration-300" href="#main">Skip to content</a>
 
     <!-- bg image -->
-    <Image src={ bg_image } alt="" format="avif" height={1080} width={1920} class="absolute min-h-svh object-cover inset-0 bottom-auto -z-1 w-full h-auto opacity-20 mask-b-from-50%" loading="eager" />
+    <Image src={ bg_image } alt="" height={1080} width={1920} class="absolute min-h-svh object-cover inset-0 bottom-auto -z-1 w-full h-auto opacity-20 mask-b-from-50%" loading="eager" />
 
     <!-- Header -->
     <HeaderMain settings={ global_settings } />

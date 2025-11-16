@@ -4,13 +4,13 @@ const { title, content } = Astro.props
 
 ---
 
-<section id="about" class="bs-container py-6 flex flex-col lg:flex-row items-center">
+<section id="about">
 
   <!-- Content -->
-  <div class="flex flex-col gap-6 w-full py-16">
+  <div class="bs-container bs-mt-lg flex flex-col gap-6">
 
     <!-- Title -->
-    <h1 class="bs-h1" set:html={ title } />
+    <h1 class="bs-h1">{ title }</h1> 
 
     <!-- Content -->
     <div class="bs-body-text xl:text-xl flex flex-col gap-4 [&_p]:last:text-bs-foreground-dark"> <h2 set:html={ content }></h2> </div>

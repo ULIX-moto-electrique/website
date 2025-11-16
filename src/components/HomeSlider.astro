@@ -4,41 +4,42 @@ const { title, subtitle, slider_img } = Astro.props
 
 ---
 
-<section id="slider" class="relative">
+<section id="slider">
+  <div class="relative bs-container bs-mt-md max-w-4xl">
 
-  <!-- Slides -->
-  <div class="js-fc-swiper swiper select-none bs-container max-w-4xl bs-mt-md">
-    <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="js-fc-swiper swiper select-none">
+      <div class="swiper-wrapper">
 
-      { slider_img.map( item =>
+        { slider_img.map( item =>
 
-      // Slides
-      <div class="swiper-slide bg-bs-surface-0 border border-bs-surface-3 rounded-xl overflow-hidden h-auto!">
+        // Slides
+        <div class="swiper-slide bg-bs-surface-0 border border-bs-surface-3 rounded-xl overflow-hidden h-auto!">
 
-        <figure class="relative flex flex-col gap-6 isolate w-full aspect-video">
+          <figure class="relative flex flex-col gap-6 isolate w-full aspect-video">
 
-          {/* BG image */}
-          <img src={ item.image } alt={ item.image_alt } loading="lazy"
-            class="rounded-xl overflow-hidden w-full h-full object-cover object-left absolute inset-0"
-            height="1024" width="768" />
+            <img src={ item.image } alt={ item.image_alt } loading="lazy"
+              class="rounded-xl overflow-hidden w-full h-full object-cover object-left absolute inset-0"
+              height="1024" width="768" />
 
-        </figure>
+          </figure>
+
+        </div>
+
+        )}
 
       </div>
-
-      )}
-
     </div>
-  </div>
 
-  {/* Centered overlay title */}
-  <div class="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-    <div class="bg-black/60 rounded-xl text-white px-8 py-5 max-w-3xl text-center">
-      <h1 class="bs-h1">{title}</h1>
-      <h2 class="bs-h2">{subtitle}</h2>
+    <!-- Centered overlay title -->
+    <div class="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
+      <div class="bg-black/60 rounded-xl text-white px-8 py-5 text-center">
+        <h1 class="bs-h1">{title}</h1>
+        <h2 class="bs-h2">{subtitle}</h2>
+      </div>
     </div>
-  </div>
 
+  </div>
 </section>
 
 <script>
@@ -47,7 +48,7 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css'
 import 'swiper/css/autoplay'
 
-const swiper = new Swiper('.js-fc-swiper', {
+new Swiper('.js-fc-swiper', {
   modules: [Autoplay],
   slidesPerView: 1,
   spaceBetween: 30,

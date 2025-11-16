@@ -2,23 +2,25 @@
 
 import Layout from "../layouts/Layout.astro"
 
+import HomeSlider from "../components/HomeSlider.astro"
+import AboutSection from "../components/AboutSection.astro"
+import CommitteeSection from "../components/CommitteeSection.astro"
 import CaseStudiesSection from "../components/CaseStudiesSection.astro"
 import ClientsSection from "../components/ClientsSection.astro"
 import FaqSection from "../components/FaqSection.astro"
-import HomeSlider from "../components/HomeSlider.astro"
-import AboutSection from "../components/AboutSection.astro"
 import NewsletterSection from "../components/NewsletterSection.astro"
 import PricingSection from "../components/PricingSection.astro"
 import QuoteSection from "../components/QuoteSection.astro"
 import TestimonialsSection from "../components/TestimonialsSection.astro"
 
+import global_settings from "../data/global_settings.json"
+import home from "../data/home.json"
+import slider_img from "../data/slider_img.json"
+import committee from "../data/committee.json"
 import caseStudies from "../data/case_studies.json"
 import clients from "../data/clients.json"
 import faq from "../data/faq.json"
-import slider_img from "../data/slider_img.json"
-import home from "../data/home.json"
 import pricing from "../data/pricing.json"
-import global_settings from "../data/global_settings.json"
 import newsletter from "../data/newsletter.json"
 import testimonials from "../data/testimonials.json"
 
@@ -37,10 +39,15 @@ import testimonials from "../data/testimonials.json"
     content={ home.about_content }
   />
 
-  <ClientsSection
+  <CommitteeSection
+    title={ home.committee_title }
+    members={ committee.members }
+  />
+
+  <!-- <ClientsSection
     clients={ clients }
     title={ home.clients_title }
-  />
+  /> -->
 
   <!-- <QuoteSection
     cite={ home.quote_cite }
@@ -49,10 +56,10 @@ import testimonials from "../data/testimonials.json"
     role={ home.quote_role }
   /> -->
 
-  <CaseStudiesSection
+  <!-- <CaseStudiesSection
     caseStudies={ caseStudies }
     title={ home.case_studies_title }
-  />
+  /> -->
 
   <!-- <TestimonialsSection
     testimonials={ testimonials }
@@ -69,6 +76,6 @@ import testimonials from "../data/testimonials.json"
     title={ home.faq_title }
   /> -->
 
-  <NewsletterSection newsletter={newsletter} />
+  <!-- <NewsletterSection newsletter={newsletter} /> -->
 
 </Layout>
