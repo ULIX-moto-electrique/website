@@ -6,6 +6,10 @@
   "theme_color": "#18181b",
   "nav": [
     {
+      "title": "Accueil",
+      "link": "/"
+    },
+    {
       "title": "À propos",
       "link": "/#about"
     },
@@ -23,10 +27,9 @@
     },
     {
       "title": "Compétition",
-      "link": "/#competition"
+      "link": "/competition"
     }
   ],
-
   "social_links": [
     {
       "title": "LinkedIn",

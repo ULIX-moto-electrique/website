@@ -13,8 +13,8 @@ import bg_image from "../assets/theme-images/Boulons.png"
 
 import global_settings from "../data/global_settings.json"
 
-import FooterMain from "../components/FooterMain.astro"
-import HeaderMain from "../components/HeaderMain.astro"
+import MainFooter from "../components/MainFooter.astro"
+import MainHeader from "../components/MainHeader.astro"
 
 const { title, description } = Astro.props
 
@@ -56,7 +56,7 @@ const { title, description } = Astro.props
     <Image src={ bg_image } alt="" height={1080} width={1920} class="absolute min-h-svh object-cover inset-0 bottom-auto -z-1 w-full h-auto opacity-20 mask-b-from-50%" loading="eager" />
 
     <!-- Header -->
-    <HeaderMain settings={ global_settings } />
+    <MainHeader settings={ global_settings } />
 
     <!-- Main slot -->
     <main id="main">
@@ -64,7 +64,7 @@ const { title, description } = Astro.props
     </main>
 
     <!-- Footer -->
-    <FooterMain settings={ global_settings } />
+    <MainFooter settings={ global_settings } />
 
   </body>
 </html>

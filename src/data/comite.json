@@ -4,37 +4,37 @@
       "name": "Alice Dupont",
       "role": "Présidente",
       "email": "alice.dupont@example.com",
-      "photo": "/committee/alice.jpg"
+      "photo": "/photos-comite/alice.jpg"
     },
     {
       "name": "Marc Leroy",
       "role": "Vice-président",
       "email": "marc.leroy@example.com",
-      "photo": "/committee/marc.jpg"
+      "photo": "/photos-comite/marc.jpg"
     },
     {
       "name": "Sophie Martin",
       "role": "Trésorière",
       "email": "sophie.martin@example.com",
-      "photo": "/committee/sophie.jpg"
+      "photo": "/photos-comite/sophie.jpg"
     },
     {
       "name": "Youssef Ben",
       "role": "Secrétaire",
       "email": "youssef.ben@example.com",
-      "photo": "/committee/youssef.jpg"
+      "photo": "/photos-comite/youssef.jpg"
     },
     {
       "name": "Jessy Geri",
       "role": "Directeur mécanique",
       "email": "jessy.geri@example.com",
-      "photo": "/committee/jessy.jpg"
+      "photo": "/photos-comite/jessy.jpg"
     },
     {
       "name": "Maurice Edith",
       "role": "Directeur électrique",
       "email": "maurice.edith@example.com",
-      "photo": "/committee/maurice.jpg"
+      "photo": "/photos-comite/maurice.jpg"
     }
   ]
 }
