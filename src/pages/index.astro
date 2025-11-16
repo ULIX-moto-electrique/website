@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro"
 
 import HomeSlider from "../components/HomeSlider.astro"
 import AboutSection from "../components/AboutSection.astro"
+import ProjetsSection from "../components/ProjetsSection.astro"
 import CommitteeSection from "../components/CommitteeSection.astro"
 import CaseStudiesSection from "../components/CaseStudiesSection.astro"
 import ClientsSection from "../components/ClientsSection.astro"
@@ -16,6 +17,7 @@ import TestimonialsSection from "../components/TestimonialsSection.astro"
 import global_settings from "../data/global_settings.json"
 import home from "../data/home.json"
 import slider_img from "../data/slider_img.json"
+import projets from "../data/projets.json"
 import committee from "../data/committee.json"
 import caseStudies from "../data/case_studies.json"
 import clients from "../data/clients.json"
@@ -37,6 +39,11 @@ import testimonials from "../data/testimonials.json"
   <AboutSection
     title={ home.about_title }
     content={ home.about_content }
+  />
+
+  <ProjetsSection
+    title={ home.projets_title }
+    projets={ projets }
   />
 
   <CommitteeSection
