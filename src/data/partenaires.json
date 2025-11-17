@@ -13,17 +13,17 @@
         },
         {
           "title": "AESGUL",
-          "image": "/logos-partenaires/placeholder.svg",
+          "image": "/logos-partenaires/aesgul.webp",
           "link": "https://www.aesgul.com/"
         },
         {
           "title": "Université Laval",
-          "image": "/logos-partenaires/placeholder.svg",
+          "image": "/logos-partenaires/ulaval.svg",
           "link": "https://www.ulaval.ca/"
         },
         {
           "title": "simard Suspensions Inc.",
-          "image": "/logos-partenaires/placeholder.svg",
+          "image": "/logos-partenaires/simard.svg",
           "link": "https://www.simardsuspensions.com/en/"
         }
       ]
@@ -35,13 +35,8 @@
       "list": [
         {
           "title": "onshape",
-          "image": "/logos-partenaires/placeholder.svg",
+          "image": "/logos-partenaires/onshape.svg",
           "link": "https://www.onshape.com/fr/"
-        },
-        {
-          "title": "Placeholder",
-          "image": "/logos-partenaires/placeholder.svg",
-          "link": "https://placehold.co/"
         }
       ]
     },

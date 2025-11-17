@@ -18,18 +18,18 @@ import partenaires from "../data/partenaires.json"
     { partenaires.partners.map((tier) => (
       <div class="my-8 p-6 rounded-lg opacity-90 shadow-md" style={`color: ${tier.text}; background-color: ${tier.background}`}>
 
-        <h2 class="bs-h2 mb-4">{ tier.title }</h2>
+        <h2 class="mb-4 bs-h2 text-4xl! md:text-5xl! text-center">{ tier.title }</h2>
 
         <div class="flex flex-wrap items-center justify-center gap-4 ">
 
           { tier.list.map((p) => (
             <a
-              class="w-80 flex items-center justify-center no-underline p-6 hover:-translate-y-1 transition-all overflow-hidden"
+              class="w-70 p-4 flex items-center justify-center no-underline hover:-translate-y-1 transition-all overflow-hidden"
               href={ p.link }
               target="_blank"
               rel="noopener noreferrer">
 
-              <img class="max-w-full h-20 object-contain mb-2" src={ p.image } alt={ p.title } loading="lazy" />
+              <img class="max-w-full h-30 object-contain mb-2" src={ p.image } alt={ p.title } loading="lazy" />
             </a>
           )) }
 
