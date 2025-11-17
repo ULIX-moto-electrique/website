@@ -2,7 +2,9 @@
   "title": "Partenaires",
   "partners": [
     {
-      "title": "Platine",
+      "title": "Platine 💎",
+      "background": "#f3f4f6",
+      "text": "#333843",
       "list": [
         {
           "title": "Agnico Eagle",
@@ -27,7 +29,9 @@
       ]
     },
     {
-      "title": "Or",
+      "title": "Or 🥇",
+      "background": "#fff4d9",
+      "text": "#463200",
       "list": [
         {
           "title": "onshape",
@@ -42,7 +46,9 @@
       ]
     },
     {
-      "title": "Argent",
+      "title": "Argent 🥈",
+      "background": "#f0f0f0",
+      "text": "#232323",
       "list": [
         {
           "title": "Placeholder",
@@ -57,7 +63,9 @@
       ]
     },
     {
-      "title": "Bronze",
+      "title": "Bronze 🥉",
+      "background": "#DFAD7C",
+      "text": "#150D05",
       "list": [
         {
           "title": "Placeholder",

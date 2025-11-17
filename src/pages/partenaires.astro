@@ -16,7 +16,7 @@ import partenaires from "../data/partenaires.json"
 
     <!-- Section de partenaire -->
     { partenaires.partners.map((tier) => (
-      <div class="my-8 p-6 rounded-lg bg-white/70 shadow-md">
+      <div class="my-8 p-6 rounded-lg opacity-90 shadow-md" style={`color: ${tier.text}; background-color: ${tier.background}`}>
 
         <h2 class="bs-h2 mb-4">{ tier.title }</h2>
 
@@ -29,7 +29,7 @@ import partenaires from "../data/partenaires.json"
               target="_blank"
               rel="noopener noreferrer">
 
-              <img class="max-w-full h-20 object-contain mb-2" src={p.image} alt={p.title} loading="lazy" />
+              <img class="max-w-full h-20 object-contain mb-2" src={ p.image } alt={ p.title } loading="lazy" />
             </a>
           )) }
 

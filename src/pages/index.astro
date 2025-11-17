@@ -3,7 +3,7 @@
 import Layout from "../layouts/Layout.astro"
 
 import SliderAccueil from "../components/SliderAccueil.astro"
-import SectionAPropos from "../components/SectionAPropos.astro"
+import SectionTexte from "../components/SectionTexte.astro"
 import SectionProjets from "../components/SectionProjets.astro"
 import SectionComite from "../components/SectionComite.astro"
 
@@ -23,7 +23,7 @@ import comite from "../data/comite.json"
     slider_img={ slider }
   />
 
-  <SectionAPropos
+  <SectionTexte
     title={ accueil.a_propos_title }
     content={ accueil.a_propos_content }
   />
@@ -31,6 +31,12 @@ import comite from "../data/comite.json"
   <SectionProjets
     title={ accueil.projets_title }
     projets={ projets }
+  />
+
+  <SectionTexte
+    title={ accueil.partenaires_title }
+    content={ accueil.partenaires_content }
+    btn={ accueil.partenaires_btn }
   />
 
   <SectionComite
