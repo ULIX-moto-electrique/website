@@ -4,7 +4,7 @@
 .bs-btn {
 
   @apply
-    active:translate-y-[1px]
+    active:translate-y-px
     active:bg-bs-surface-2
     bg-bs-surface-3
     duration-200
