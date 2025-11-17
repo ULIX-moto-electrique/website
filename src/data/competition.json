@@ -7,16 +7,16 @@
     ],
     "images": [
         {
-            "image":"/autres-images/moto1.avif",
-            "image_alt":"Moto 1"
+          "image":"autres-images/moto1.avif",
+          "image_alt":"Moto 1"
         },
         {
-            "image":"/autres-images/moto2.avif",
-            "image_alt":"Moto 2"
+          "image":"autres-images/moto2.avif",
+          "image_alt":"Moto 2"
         },
         {
-            "image":"/autres-images/moto3.avif",
-            "image_alt":"Moto 3"
+          "image":"autres-images/moto3.avif",
+          "image_alt":"Moto 3"
         }
     ]
   }

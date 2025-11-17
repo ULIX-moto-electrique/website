@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 import global_settings from "../data/global_settings.json";
 import competition from "../data/competition.json";
+import { getPath } from '../utils/getPath.js'
 
 ---
 
@@ -27,9 +28,9 @@ import competition from "../data/competition.json";
 
     <div class="flex flex-wrap items-center justify-center mt-8 gap-16">
 
-      { competition.images.map( ({image, image_alt}) => (
-          <img src={ image } alt={ image_alt } class="w-48 h-48 rounded-full object-cover" />
-      )) }
+        { competition.images.map( ({image, image_alt}) => (
+          <img src={ getPath(image) } alt={ image_alt } class="w-48 h-48 rounded-full object-cover" />
+        )) }
 
     </div>
 

@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro"
 
 import global_settings from "../data/global_settings.json";
 import partenaires from "../data/partenaires.json"
+import { getPath } from '../utils/getPath.js'
 
 ---
 
@@ -29,7 +30,7 @@ import partenaires from "../data/partenaires.json"
               target="_blank"
               rel="noopener noreferrer">
 
-              <img class="max-w-full h-30 object-contain mb-2" src={ p.image } alt={ p.title } loading="lazy" />
+              <img class="max-w-full h-30 object-contain mb-2" src={ getPath(p.image) } alt={ p.title } loading="lazy" />
             </a>
           )) }
 

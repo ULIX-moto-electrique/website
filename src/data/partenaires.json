@@ -8,22 +8,22 @@
       "list": [
         {
           "title": "Agnico Eagle",
-          "image": "/logos-partenaires/agnico-eagle.svg",
+          "image": "logos-partenaires/agnico-eagle.svg",
           "link": "https://www.agnicoeagle.com/French/overview/default.aspx"
         },
         {
           "title": "AESGUL",
-          "image": "/logos-partenaires/aesgul.webp",
+          "image": "logos-partenaires/aesgul.webp",
           "link": "https://www.aesgul.com/"
         },
         {
           "title": "Université Laval",
-          "image": "/logos-partenaires/ulaval.svg",
+          "image": "logos-partenaires/ulaval.svg",
           "link": "https://www.ulaval.ca/"
         },
         {
           "title": "simard Suspensions Inc.",
-          "image": "/logos-partenaires/simard.svg",
+          "image": "logos-partenaires/simard.svg",
           "link": "https://www.simardsuspensions.com/en/"
         }
       ]
@@ -35,7 +35,7 @@
       "list": [
         {
           "title": "onshape",
-          "image": "/logos-partenaires/onshape.svg",
+          "image": "logos-partenaires/onshape.svg",
           "link": "https://www.onshape.com/fr/"
         }
       ]
@@ -47,12 +47,12 @@
       "list": [
         {
           "title": "Placeholder",
-          "image": "/logos-partenaires/placeholder.svg",
+          "image": "logos-partenaires/placeholder.svg",
           "link": "https://placehold.co/"
         },
         {
           "title": "Placeholder",
-          "image": "/logos-partenaires/placeholder.svg",
+          "image": "logos-partenaires/placeholder.svg",
           "link": "https://placehold.co/"
         }
       ]
@@ -64,12 +64,12 @@
       "list": [
         {
           "title": "Placeholder",
-          "image": "/logos-partenaires/placeholder.svg",
+          "image": "logos-partenaires/placeholder.svg",
           "link": "https://placehold.co/"
         },
         {
           "title": "Placeholder",
-          "image": "/logos-partenaires/placeholder.svg",
+          "image": "logos-partenaires/placeholder.svg",
           "link": "https://placehold.co/"
         }
       ]

@@ -1,6 +1,7 @@
 ---
 
 const { title, subtitle, slider_img } = Astro.props
+import { getPath } from '../utils/getPath.js'
 
 ---
 
@@ -18,7 +19,7 @@ const { title, subtitle, slider_img } = Astro.props
 
           <figure class="relative flex flex-col gap-6 isolate w-full aspect-video">
 
-            <img src={ item.image } alt={ item.image_alt } loading="lazy"
+            <img src={ getPath(item.image) } alt={ item.image_alt } loading="lazy"
               class="rounded-xl overflow-hidden w-full h-full object-cover object-left absolute inset-0"
               height="1024" width="768" />
 

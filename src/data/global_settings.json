@@ -1,7 +1,7 @@
 {
   "title": "ULIX",
   "description": "Site web du groupe ULIX",
-  "social_image": "/640x360.jpg",
+  "social_image": "640x360.jpg",
   "base_url": "http://ulix.web.app/",
   "theme_color": "#18181b",
   "nav": [

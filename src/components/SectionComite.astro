@@ -1,6 +1,8 @@
 ---
 
+
 const { title, members } = Astro.props
+import { getPath } from '../utils/getPath.js'
 
 ---
 
@@ -18,7 +20,7 @@ const { title, members } = Astro.props
         <article class="flex items-start justify-center p-6">
           <div class="flex flex-col items-center justify-center w-fit">
             <img
-              src={ member.photo }
+              src={ getPath(member.photo) }
               alt={ `Portrait de ${member.name}` }
               class="w-32 h-32 rounded-full object-cover mb-4 ring-2 ring-gray-300"
               loading="lazy"

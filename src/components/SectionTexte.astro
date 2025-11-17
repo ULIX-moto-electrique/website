@@ -1,6 +1,7 @@
 ---
 
 const { title, content, btn } = Astro.props
+import { getPath } from '../utils/getPath.js'
 
 ---
 
@@ -17,7 +18,7 @@ const { title, content, btn } = Astro.props
 
     { btn && (
       <div class="flex items-center justify-center">
-        <a href="/partenaires" class="min-w-32 bs-btn">{ btn }</a>
+        <a href={ getPath('partenaires') } class="min-w-32 bs-btn">{ btn }</a>
       </div>
     ) }
 
