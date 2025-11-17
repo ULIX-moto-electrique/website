@@ -8,6 +8,14 @@ import { getPath } from '../utils/getPath.js'
 <section id="slider">
   <div class="relative bs-container bs-mt-md max-w-4xl">
 
+    <!-- Small screens: title before slider (no background) -->
+    <div class="md:hidden w-full text-center pb-4">
+      <div class="px-4">
+        <h1 class="bs-h1">{title}</h1>
+        <h2 class="bs-h2 my-4">{subtitle}</h2>
+      </div>
+    </div>
+
     <!-- Slides -->
     <div class="js-fc-swiper swiper select-none">
       <div class="swiper-wrapper">
@@ -32,9 +40,9 @@ import { getPath } from '../utils/getPath.js'
       </div>
     </div>
 
-    <!-- Centered overlay title -->
-    <div class="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
-      <div class="bg-black/60 rounded-xl text-white px-8 py-5 text-center">
+    <!-- Centered overlay title (visible on md+ with background) -->
+    <div class="hidden md:flex pointer-events-none absolute inset-0 z-10 items-center justify-center">
+      <div class="bg-black/60 rounded-xl text-white px-8 py-5 mx-8 text-center">
         <h1 class="bs-h1">{title}</h1>
         <h2 class="bs-h2">{subtitle}</h2>
       </div>
