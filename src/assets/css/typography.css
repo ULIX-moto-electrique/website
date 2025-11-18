@@ -2,19 +2,19 @@
 @reference "./global.css";
 
 .bs-h1 {
-  @apply font-display font-medium text-balance text-5xl md:text-6xl;
+  @apply font-bold text-balance text-5xl md:text-6xl;
 }
 
 .bs-h2 {
-  @apply font-display font-medium text-balance text-3xl md:text-4xl;
+  @apply font-bold text-balance text-3xl md:text-4xl;
 }
 
 .bs-h3 {
-  @apply font-display font-medium text-balance text-lg md:text-2xl;
+  @apply font-bold text-balance text-lg md:text-2xl;
 }
 
 .bs-h4 {
-  @apply font-display font-medium text-balance text-base md:text-xl;
+  @apply font-bold text-balance text-base md:text-xl;
 }
 
 .bs-body-text {
