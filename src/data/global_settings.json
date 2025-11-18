@@ -1,23 +1,8 @@
 {
   "title": "ULIX",
   "description": "Site web du groupe ULIX",
-  "social_image": "640x360.jpg",
-  "base_url": "http://ulix.web.app/",
+  "social_image": "social-640x360.jpg",
   "theme_color": "#18181b",
-  "nav": [
-    {
-      "title": "Accueil",
-      "link": "/"
-    },
-    {
-      "title": "Partenaires",
-      "link": "/partenaires"
-    },
-    {
-      "title": "Compétition",
-      "link": "/competition"
-    }
-  ],
   "social_links": [
     {
       "title": "LinkedIn",

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Accueil",
+    "link": "/"
+  },
+  {
+    "title": "Partenaires",
+    "link": "/partenaires"
+  },
+  {
+    "title": "Compétition",
+    "link": "/competition"
+  }
+]

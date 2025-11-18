@@ -1,8 +1,11 @@
 import { defineConfig } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
+import { ensureTrailingSlash } from './src/utils/ensureTrailingSlash.js'
+
+const basePath = process.env.BASE_PATH ?? '/'
 
 export default defineConfig({
-  base: '/ulix-website/', // Pour démo sur GitHub Pages
+  base: ensureTrailingSlash(basePath),
   vite: {
     plugins: [tailwindcss()]
   },

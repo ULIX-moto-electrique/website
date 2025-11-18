@@ -1,10 +1,9 @@
 ---
-
+import navigation from "../data/navigation.json"
 import Logo from '../assets/theme-images/logo.svg'
 
 const { settings } = Astro.props
 import { getPath } from '../utils/getPath.js'
-
 ---
 
 <header class="wrapper bg-loop font-semibold">
@@ -24,7 +23,7 @@ import { getPath } from '../utils/getPath.js'
 
       <!-- Desktop Links (hidden on small screens) -->
       <nav class="hidden md:flex justify-end lg:gap-2">
-        { settings.nav.map( item =>
+        { navigation.map( item =>
           <a class="bs-btn bg-transparent! before:translate-y-full hover:before:translate-y-0" href={ getPath(item.link) }>
             { item.title }
           </a>
@@ -44,7 +43,7 @@ import { getPath } from '../utils/getPath.js'
 
     <!-- Mobile menu (hidden by default) -->
     <nav id="mobile-nav" class="md:hidden hidden fixed top-32 left-0 w-dvw h-dvh mt-3 py-3 z-50 bg-bs-surface-1 rounded">
-      { settings.nav.map( item =>
+      { navigation.map( item =>
         <a class="block px-4 py-2 mb-4 text-lg" href={ getPath(item.link) }>
           { item.title }
         </a>

@@ -3,8 +3,8 @@
   "partners": [
     {
       "title": "Platine 💎",
+      "title_color": "#333843",
       "background": "#f3f4f6",
-      "text": "#333843",
       "list": [
         {
           "title": "Agnico Eagle",
@@ -30,8 +30,8 @@
     },
     {
       "title": "Or 🥇",
+      "title_color": "#463200",
       "background": "#fff4d9",
-      "text": "#463200",
       "list": [
         {
           "title": "onshape",
@@ -42,8 +42,8 @@
     },
     {
       "title": "Argent 🥈",
+      "title_color": "#232323",
       "background": "#f0f0f0",
-      "text": "#232323",
       "list": [
         {
           "title": "Placeholder",
@@ -59,8 +59,8 @@
     },
     {
       "title": "Bronze 🥉",
+      "title_color": "#150D05",
       "background": "#DFAD7C",
-      "text": "#150D05",
       "list": [
         {
           "title": "Placeholder",

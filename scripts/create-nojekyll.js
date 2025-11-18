@@ -1,9 +1,9 @@
-const fs = require('fs');
-const path = require('path');
-const filePath = path.join(process.cwd(), 'dist', '.nojekyll');
+import { mkdirSync, writeFileSync } from 'fs';
+import { join, dirname } from 'path';
+const filePath = join(process.cwd(), 'dist', '.nojekyll');
 try {
-  fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  fs.writeFileSync(filePath, '');
+  mkdirSync(dirname(filePath), { recursive: true });
+  writeFileSync(filePath, '');
   console.log('Created', filePath);
 } catch (err) {
   console.error('Failed to create .nojekyll', err);
