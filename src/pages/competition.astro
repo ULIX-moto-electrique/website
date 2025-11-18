@@ -11,16 +11,20 @@ import { getPath } from '../utils/getPath.js'
   <section class="bs-container bs-mt-md flex flex-col gap-6">
 
     <!-- Title -->
-    <h1 class="bs-h1">{ competition.title }</h1> 
+    <h1 class="bs-h1 text-center">{ competition.title }</h1> 
 
     <!-- Content -->
     <div class="bs-body-text xl:text-xl flex flex-col gap-4">
 
       { competition.paragraphs.map( content => (
 
-        <p set:html={ content }></p>
+        <p class="text-center" set:html={ content }></p>
 
       )) }
+
+      <div class="flex items-center justify-center">
+        <a href="https://www.motostudent.com/" class="min-w-32 bs-btn font-medium! text-lg!">Lien vers le site de la compétition</a>
+      </div>
 
     </div>
 

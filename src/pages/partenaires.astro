@@ -11,11 +11,11 @@ import { getPath } from '../utils/getPath.js'
   <section class="bs-container bs-mt-md">
 
     <!-- Title -->
-    <h1 class="bs-h1">{ partenaires.title }</h1> 
+    <h1 class="bs-h1 text-center">{ partenaires.title }</h1> 
 
     <!-- Section de partenaire -->
     { partenaires.partners.map((tier) => (
-      <div class="my-8 p-6 rounded-lg opacity-90 shadow-md" style={`color: ${tier.title_color}; background-color: ${tier.background}`}>
+      <div class="my-8 p-6 rounded-lg opacity-70 shadow-md" style={`color: ${tier.title_color}; background-color: ${tier.background}`}>
 
         <h2 class="mb-4 bs-h2 text-4xl! md:text-5xl! text-center">{ tier.title }</h2>
 
