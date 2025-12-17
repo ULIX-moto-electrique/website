@@ -1,0 +1,158 @@
+---
+const { navigation } = Astro.props
+import { getPath } from '../utils/getPath.js'
+---
+
+<!-- Burger button (visible on small screens) + mobile menu -->
+<div class="col-span-6 flex items-center justify-end gap-2">
+
+  <!-- Burger button (visible on small screens) -->
+  <button id="burger-btn" class="md:hidden p-2 rounded focus:outline-none focus:ring-1" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+    <svg id="burger-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path class="line line1" d="M4 7h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path class="line line2" d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path class="line line3" d="M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+</div>
+
+<!-- Mobile menu (hidden by default) -->
+<nav id="mobile-nav" aria-hidden="true" class="md:hidden hidden fixed top-32 left-0 w-dvw h-dvh mt-3 py-3 z-50 bg-bs-surface-1 rounded">
+  { navigation.map( item =>
+    <a class="block px-4 py-2 mb-4 text-lg" href={ getPath(item.link) }>
+      { item.title }
+    </a>
+  )}
+</nav>
+
+<style>
+  :root { --menu-trans: 220ms; }
+
+  /* Menu animation defaults */
+  #mobile-nav {
+    transition: opacity var(--menu-trans) ease, transform var(--menu-trans) ease;
+    transform-origin: top right;
+  }
+
+  /* Burger icon animation */
+  .line { transition: transform 220ms ease, opacity 180ms ease; transform-box: fill-box; transform-origin: center; }
+  #burger-btn.open .line1 { transform: translateY(5px) rotate(45deg); }
+  #burger-btn.open .line2 { opacity: 0; transform: scaleX(0); }
+  #burger-btn.open .line3 { transform: translateY(-5px) rotate(-45deg); }
+</style>
+
+<script is:inline type="module">
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('burger-btn');
+    const menu = document.getElementById('mobile-nav');
+
+    if (!btn || !menu) {
+      console.warn('Burger button or mobile nav not found');
+      return;
+    }
+
+    // Read transition duration from CSS var if available
+    const cssTrans = getComputedStyle(document.documentElement).getPropertyValue('--menu-trans').trim();
+    const TRANS_MS = cssTrans ? parseInt(cssTrans.replace('ms', '')) : 220;
+
+    let previouslyFocused = null;
+
+    const getFocusable = (root) => {
+      return Array.from(root.querySelectorAll('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])'))
+        .filter(el => !el.hasAttribute('disabled') && el.getClientRects().length > 0);
+    };
+
+    function openMenu() {
+      previouslyFocused = document.activeElement;
+      btn.setAttribute('aria-expanded', 'true');
+      btn.classList.add('open');
+      menu.classList.remove('hidden');
+      menu.setAttribute('aria-hidden', 'false');
+
+      // prepare animation start
+      menu.style.opacity = '0';
+      menu.style.transform = 'translateY(-8px) scale(0.98)';
+      // force layout
+      menu.getBoundingClientRect();
+      requestAnimationFrame(() => {
+        menu.style.transition = `opacity ${TRANS_MS}ms ease, transform ${TRANS_MS}ms ease`;
+        menu.style.opacity = '1';
+        menu.style.transform = 'translateY(0) scale(1)';
+      });
+
+      document.body.style.overflow = 'hidden';
+
+      // focus first focusable item
+      const focusables = getFocusable(menu);
+      if (focusables.length) focusables[0].focus();
+    }
+
+    function closeMenu() {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.classList.remove('open');
+
+      // animate out
+      menu.style.opacity = '0';
+      menu.style.transform = 'translateY(-8px) scale(0.98)';
+
+      document.body.style.overflow = '';
+      menu.setAttribute('aria-hidden', 'true');
+
+      // after transition, hide
+      setTimeout(() => {
+        menu.classList.add('hidden');
+        menu.style.transition = '';
+        menu.style.opacity = '';
+        menu.style.transform = '';
+      }, TRANS_MS + 10);
+
+      // restore focus
+      if (previouslyFocused && previouslyFocused.focus) previouslyFocused.focus();
+    }
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      if (isOpen) closeMenu(); else openMenu();
+    });
+
+    // Close on Escape + focus trap on Tab
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+        closeMenu();
+      }
+
+      if (e.key === 'Tab' && !menu.classList.contains('hidden')) {
+        const focusables = getFocusable(menu);
+        if (focusables.length === 0) {
+          e.preventDefault();
+          return;
+        }
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        } else if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      }
+    });
+
+    // Close when clicking outside the menu
+    document.addEventListener('click', (e) => {
+      if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    // Close the menu on viewport resize when crossing the md breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768 && !menu.classList.contains('hidden')) {
+        closeMenu();
+      }
+    });
+  });
+</script>
