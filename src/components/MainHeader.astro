@@ -55,9 +55,11 @@ import { getPath } from '../utils/getPath.js'
 </header>
 
 <style>
+  :root { --menu-trans: 220ms; }
+
   /* Menu animation defaults */
   #mobile-nav {
-    transition: opacity 220ms ease, transform 220ms ease;
+    transition: opacity var(--menu-trans) ease, transform var(--menu-trans) ease;
     transform-origin: top right;
   }
 
@@ -78,13 +80,15 @@ import { getPath } from '../utils/getPath.js'
       return;
     }
 
-    const TRANS_MS = 220;
+    // Read transition duration from CSS var if available
+    const cssTrans = getComputedStyle(document.documentElement).getPropertyValue('--menu-trans').trim();
+    const TRANS_MS = cssTrans ? parseInt(cssTrans.replace('ms', '')) : 220;
 
     let previouslyFocused = null;
 
     const getFocusable = (root) => {
       return Array.from(root.querySelectorAll('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])'))
-        .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null);
+        .filter(el => !el.hasAttribute('disabled') && el.getClientRects().length > 0);
     };
 
     function openMenu() {
@@ -92,6 +96,7 @@ import { getPath } from '../utils/getPath.js'
       btn.setAttribute('aria-expanded', 'true');
       btn.classList.add('open');
       menu.classList.remove('hidden');
+      menu.setAttribute('aria-hidden', 'false');
 
       // prepare animation start
       menu.style.opacity = '0';
@@ -104,7 +109,7 @@ import { getPath } from '../utils/getPath.js'
         menu.style.transform = 'translateY(0) scale(1)';
       });
 
-      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
 
       // focus first focusable item
       const focusables = getFocusable(menu);
@@ -119,7 +124,8 @@ import { getPath } from '../utils/getPath.js'
       menu.style.opacity = '0';
       menu.style.transform = 'translateY(-8px) scale(0.98)';
 
-      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      menu.setAttribute('aria-hidden', 'true');
 
       // after transition, hide
       setTimeout(() => {
