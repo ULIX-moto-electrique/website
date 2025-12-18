@@ -1,19 +1,62 @@
 ---
-const { id, title } = Astro.props
+const { id, title, horizontal = false } = Astro.props
 ---
 
 <section id={id}>
 
-  <!-- Content -->
-  <div class="bs-container bs-mt-lg flex flex-col gap-6">
+  <div class={`bs-container bs-mt-lg flex gap-6 ${horizontal ? 'items-center section-layout-horizontal' : 'flex-col'}`}>
 
-    <!-- Title -->
-    <h1 class="bs-h1 text-center">{ title }</h1>
+    <div class="pane-left">
+      <h1 class="bs-h1 text-center">{ title }</h1>
+    </div>
 
-    <slot />
+    {horizontal ? <div class="separator" aria-hidden="true"></div> : null}
 
-    <slot name="actions" />
+    <div class="pane-right">
+      <slot />
+    </div>
 
   </div>
 
 </section>
+
+<style>
+  .section-layout-horizontal { display: flex; flex-direction: row; align-items: center; gap: 1.5rem; }
+  .section-layout-horizontal .pane-left,
+  .section-layout-horizontal .pane-right { flex: 1; }
+  .section-layout-horizontal .separator {
+    position: relative;
+    width: 2px;
+    align-self: stretch;
+    margin: 0 1rem;
+  }
+
+  .section-layout-horizontal .separator::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  @media (max-width: 640px) {
+    .section-layout-horizontal { flex-direction: column; align-items: stretch; gap: 1rem; }
+
+    .section-layout-horizontal .separator {
+      width: 100%;
+      height: 2px;
+      align-self: auto;
+      margin: 0.5rem 0;
+    }
+
+    .section-layout-horizontal .separator::before {
+      top: 0;
+      bottom: 0;
+      left: 10%;
+      right: 10%;
+      background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+    }
+  }
+</style>

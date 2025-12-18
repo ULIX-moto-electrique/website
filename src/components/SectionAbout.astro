@@ -1,0 +1,12 @@
+---
+const { title, content, btn } = Astro.props
+import SectionLayout from './SectionLayout.astro'
+---
+
+<SectionLayout id="about" title={title} horizontal>
+
+  <div class="bs-body-text text-center xl:text-xl flex flex-col gap-4 [&_p]:last:text-bs-foreground-dark">
+    <h2 set:html={ content }></h2>
+  </div>
+
+</SectionLayout>

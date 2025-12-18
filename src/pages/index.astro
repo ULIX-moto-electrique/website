@@ -2,14 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 
 import SliderAccueil from "../components/SliderAccueil.astro";
-import SectionTexte from "../components/SectionTexte.astro";
+import SectionAbout from "../components/SectionAbout.astro";
 import SectionProjets from "../components/SectionProjets.astro";
+import SectionPartenaires from "../components/SectionPartenaires.astro";
 import SectionComite from "../components/SectionComite.astro";
 
 import global_settings from "../data/global_settings.json";
 import accueil from "../data/accueil.json";
 import slider from "../data/slider.json";
-import projets from "../data/projets.json";
 import comite from "../data/comite.json";
 ---
 
@@ -21,17 +21,17 @@ import comite from "../data/comite.json";
     slider_img={ slider }
   />
 
-  <SectionTexte
+  <SectionAbout
     title={ accueil.a_propos_title }
     content={ accueil.a_propos_content }
   />
 
   <SectionProjets
     title={ accueil.projets_title }
-    projets={ projets }
+    projets={ accueil.projets_content }
   />
 
-  <SectionTexte
+  <SectionPartenaires
     title={ accueil.partenaires_title }
     content={ accueil.partenaires_content }
     btn={ accueil.partenaires_btn }

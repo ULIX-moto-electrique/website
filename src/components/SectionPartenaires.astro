@@ -6,15 +6,14 @@ import SectionLayout from './SectionLayout.astro'
 
 <SectionLayout id="about" title={title}>
 
-  <!-- Content -->
   <div class="bs-body-text text-center xl:text-xl flex flex-col gap-4 [&_p]:last:text-bs-foreground-dark">
     <h2 set:html={ content }></h2>
   </div>
 
-  { btn && (
-    <div slot="actions" class="flex items-center justify-center">
-      <a href={ getPath('partenaires') } class="min-w-32 bs-btn">{ btn }</a>
-    </div>
-  ) }
+  <div class="my-4"></div>
+
+  <div class="flex items-center justify-center">
+    <a href={ getPath('partenaires') } class="min-w-32 bs-btn">{ btn }</a>
+  </div>
 
 </SectionLayout>

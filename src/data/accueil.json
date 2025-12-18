@@ -2,14 +2,24 @@
   "slider_title": "ULIX Moto Électrique",
   "slider_subtitle": "Club de moto électrique de l'Université Laval",
 
-  "a_propos_title": "À propos",
+  "a_propos_title": "À propos de nous",
   "a_propos_content": "ULIX Moto-Électrique est une association étudiante de l'Université Laval dédiée à la conception et la fabrication d'une moto de course 100 % électrique. Composée d'étudiants passionnés provenant de divers domaines du génie, l'équipe vise à repousser les limites de l'ingénierie durable tout en représentant fièrement l'innovation québécoise à la compétition internationale <a class='underline' href='./competition'>MotoStudent</a> en Espagne.",
 
   "projets_title": "Nos projets",
+  "projets_content": [
+    {
+      "title": "Moto de route",
+      "content": "Nous avons l'opportunité de convertir une moto à essence en moto complètement électrique qui sera destinée à rouler sur les routes du Québec. La moto de base est une Kawasaki ZZ-R1200."
+    },
+    {
+      "title": "Moto de compétition",
+      "content": "Nous participerons à la compétition <a class='underline' href='./competition'>MotoStudent</a>. Nous concevons donc une moto à propulsion 100% électrique à partir de 0. Le but est de courser sur le circuit Motorland Aragon."
+    }
+  ],
 
   "partenaires_title": "Nos partenaires",
   "partenaires_content": "Nous ne pourrions pas réaliser nos projets sans l'aide précieuse de nos partenaires. Leur générosité et leur confiance nous permettent d'innover, d'apprendre et d'alimenter notre passion.",
   "partenaires_btn": "Voir les partenaires",
 
-  "comite_title": "Notre comité administraif"
+  "comite_title": "Notre comité administratif"
 }
