@@ -4,7 +4,7 @@
     {
       "title": "Platine",
       "title_color": "#333843",
-      "background": "#f3f4f6",
+      "background": "#F3F4F6AA",
       "list": [
         {
           "title": "Agnico Eagle",
@@ -31,7 +31,7 @@
     {
       "title": "Or",
       "title_color": "#463200",
-      "background": "#fff4d9",
+      "background": "#FFF4D9AA",
       "list": [
         {
           "title": "onshape",
@@ -43,7 +43,7 @@
     {
       "title": "Argent",
       "title_color": "#232323",
-      "background": "#f0f0f0",
+      "background": "#F0F0F0AA",
       "list": [
         {
           "title": "Placeholder",
@@ -60,7 +60,7 @@
     {
       "title": "Bronze",
       "title_color": "#150D05",
-      "background": "#DFAD7C",
+      "background": "#DFAD7CAA",
       "list": [
         {
           "title": "Placeholder",
