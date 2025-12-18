@@ -1,0 +1,19 @@
+---
+const { id, title } = Astro.props
+---
+
+<section id={id}>
+
+  <!-- Content -->
+  <div class="bs-container bs-mt-lg flex flex-col gap-6">
+
+    <!-- Title -->
+    <h1 class="bs-h1 text-center">{ title }</h1>
+
+    <slot />
+
+    <slot name="actions" />
+
+  </div>
+
+</section>
