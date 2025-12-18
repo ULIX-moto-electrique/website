@@ -6,6 +6,23 @@ const { settings } = Astro.props
 import { getPath } from '../utils/getPath.js'
 
 import BurgerMenu from './BurgerMenu.astro'
+
+const normalizePath = (path) => {
+  if (!path) return '/'
+  if (path === '/') return '/'
+  return path.replace(/\/+$/, '') || '/'
+}
+
+const currentPath = normalizePath(Astro.url.pathname)
+
+const navItems = navigation.map((item) => {
+  const href = getPath(item.link)
+  return {
+    ...item,
+    href,
+    isActive: normalizePath(href) === currentPath,
+  }
+})
 ---
 
 <header class="wrapper bg-loop font-semibold">
@@ -24,16 +41,21 @@ import BurgerMenu from './BurgerMenu.astro'
     <div class="col-span-6 flex items-center justify-end gap-2">
 
       <!-- Desktop Links (hidden on small screens) -->
-      <nav class="hidden md:flex justify-end lg:gap-2">
-        { navigation.map( item =>
-          <a class="bs-btn bg-transparent! before:translate-y-full hover:before:translate-y-0" href={ getPath(item.link) }>
+      <nav class="hidden md:flex justify-end lg:gap-2 bg-neutral-500/50 rounded-md">
+        { navItems.map((item) =>
+          <a
+            class="bs-btn before:translate-y-full hover:before:translate-y-0"
+            href={ item.href }
+            aria-current={ item.isActive ? 'page' : undefined }
+            style={ item.isActive ? `background-color: var(--color-accent)` : `background-color: transparent` }
+          >
             { item.title }
           </a>
         )}
       </nav>
 
       <!-- Mobile Burger Menu -->
-      <BurgerMenu navigation={navigation} getPath={getPath} />
+      <BurgerMenu navigation={navItems} />
 
     </div>
 

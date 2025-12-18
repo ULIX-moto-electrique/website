@@ -1,0 +1,21 @@
+:root {
+  /* Brand */
+  --color-accent: #e30513aa;
+
+  /* Surfaces */
+  --color-surface-0: #121212;
+  --color-surface-1: #18181b;
+  --color-surface-2: rgba(255, 255, 255, 0.03);
+  --color-surface-3: #2f2f31;
+
+  /* Foreground */
+  --color-foreground-light: #eeeeee;
+  --color-foreground-dark: #9f9f9f;
+
+  /* Utility */
+  --color-selection-text: #000000;
+  --color-selection-bg: #fcd34d;
+  --color-focus-ring: rgba(255, 255, 255, 0.75);
+  --color-neutral-white: #ffffff;
+  --color-neutral-black: #000000;
+}

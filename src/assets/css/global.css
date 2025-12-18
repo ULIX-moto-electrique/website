@@ -1,16 +1,18 @@
 @import "tailwindcss";
+@import "./colors.css";
 
 @theme {
 
   --font-body: var(--font-syne), "ui-sans-serif", "system-ui", "sans-serif";
 
-  --color-bs-surface-0: #121212;
-  --color-bs-surface-1: #18181B;
-  --color-bs-surface-2: rgba(255, 255, 255, 0.03);
-  --color-bs-surface-3: #2F2F31;
+  --color-bs-surface-0: var(--color-surface-0);
+  --color-bs-surface-1: var(--color-surface-1);
+  --color-bs-surface-2: var(--color-surface-2);
+  --color-bs-surface-3: var(--color-surface-3);
 
-  --color-bs-foreground-light: #eee;
-  --color-bs-foreground-dark: #9f9f9f;
+  --color-bs-foreground-light: var(--color-foreground-light);
+  --color-bs-foreground-dark: var(--color-foreground-dark);
+  --color-bs-accent: var(--color-accent);
 
   --color-current: currentColor;
 
