@@ -5,9 +5,7 @@ import "../assets/css/typography.css";
 import "../assets/css/layout.css";
 import "../assets/css/buttons.css";
 
-import { Font } from 'astro:assets';
-
-import Image from "astro/components/Image.astro";
+import { Image, Font } from 'astro:assets';
 import bg_image from "../assets/theme-images/Boulons.png";
 
 import global_settings from "../data/global_settings.json";
@@ -21,7 +19,7 @@ const { title, description } = Astro.props;
 const socialImage = getPath(global_settings.social_image);
 ---
 
-<html lang="en">
+<html lang="fr">
 
   <head>
 
@@ -36,9 +34,11 @@ const socialImage = getPath(global_settings.social_image);
     <meta name="description" content={ description ?? global_settings.description } />
     <meta name="theme-color" content={ global_settings.theme_color } />
 
+    <meta property="og:type" content="website" />
     <meta property="og:title" content={ title ?? global_settings.title } />
     <meta property="og:description" content={ description ?? global_settings.description } />
     <meta property="og:image" content={ socialImage } />
+    <meta property="og:url" content={ Astro.url } />
 
     <Font cssVariable="--font-syne" preload />
 
