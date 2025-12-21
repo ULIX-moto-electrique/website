@@ -24,3 +24,14 @@
     1.051 39.6%, 1.017 43.1%, 0.991, 0.977 51%, 0.974 53.8%, 0.975 57.1%,
     0.997 69.8%, 1.003 76.9%, 1.004 83.8%, 1);
 }
+
+/* Prevent long words from breaking layout inside flex containers */
+.flex > * { min-width: 0; }
+
+/* Apply word-break / hyphenation to all headings site-wide */
+h1, h2, h3, h4, h5, h6,
+.bs-h1, .bs-h2, .bs-h3, .bs-h4 {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
