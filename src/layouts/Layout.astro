@@ -9,14 +9,14 @@ import { Image, Font } from 'astro:assets';
 import bg_image from "../assets/theme-images/Boulons.png";
 
 import global_settings from "../data/global_settings.json";
-import { getPath } from '../utils/getPath.js';
+import { withBaseUrl } from '../utils/pathUtils.js';
 
 import MainFooter from "../components/MainFooter.astro";
 import MainHeader from "../components/MainHeader.astro";
 
 const { title, description } = Astro.props;
 
-const socialImage = getPath(global_settings.social_image);
+const socialImage = withBaseUrl(global_settings.social_image);
 ---
 
 <html lang="fr">
@@ -28,8 +28,8 @@ const socialImage = getPath(global_settings.social_image);
 
     <title>{ title ?? global_settings.title }</title>
 
-    <link rel="icon" type="image/svg+xml" href={ getPath('favicon.svg') } />
-    <link rel="manifest" href={ getPath('manifest.json') } />
+    <link rel="icon" type="image/svg+xml" href={ withBaseUrl('favicon.svg') } />
+    <link rel="manifest" href={ withBaseUrl('manifest.json') } />
 
     <meta name="description" content={ description ?? global_settings.description } />
     <meta name="theme-color" content={ global_settings.theme_color } />

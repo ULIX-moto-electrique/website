@@ -1,6 +1,6 @@
 ---
 const { title, content, btn } = Astro.props
-import { getPath } from '../utils/getPath.js'
+import { withBaseUrl } from '../utils/pathUtils.js'
 import SectionLayout from './SectionLayout.astro'
 ---
 
@@ -13,7 +13,7 @@ import SectionLayout from './SectionLayout.astro'
   <div class="my-4"></div>
 
   <div class="flex items-center justify-center">
-    <a href={ getPath('partenaires') } class="min-w-32 bs-btn">{ btn }</a>
+    <a href={ withBaseUrl('partenaires') } class="min-w-32 bs-btn">{ btn }</a>
   </div>
 
 </SectionLayout>

@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
-import { ensureTrailingSlash } from './src/utils/ensureTrailingSlash.js'
+import { ensureTrailingSlash } from './src/utils/pathUtils.js'
 
 const basePath = process.env.BASE_PATH ?? '/'
 
