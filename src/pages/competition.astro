@@ -1,19 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import SectionLayout from "../layouts/SectionLayout.astro";
 
 import global_settings from "../data/global_settings.json";
 import competition from "../data/competition.json";
 import { withBaseUrl } from '../utils/pathUtils.js';
 ---
 
-<Layout title={ global_settings.title + " - Compétition" }>
+<PageLayout title={ global_settings.title + " - Compétition" }>
+  <SectionLayout id="competition" title={ competition.title }>
 
-  <section class="bs-container bs-mt-md flex flex-col gap-6">
-
-    <!-- Title -->
-    <h1 class="bs-h1 text-center">{ competition.title }</h1> 
-
-    <!-- Content -->
     <div class="bs-body-text xl:text-xl flex flex-col gap-4">
 
       { competition.paragraphs.map( content => (
@@ -36,6 +32,5 @@ import { withBaseUrl } from '../utils/pathUtils.js';
 
     </div>
 
-  </section>
-
-</Layout>
+  </SectionLayout>
+</PageLayout>

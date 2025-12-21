@@ -1,19 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import PageLayout from "../layouts/PageLayout.astro"
+import SectionLayout from "../layouts/SectionLayout.astro"
 
 import global_settings from "../data/global_settings.json";
 import partenaires from "../data/partenaires.json";
 import { withBaseUrl } from '../utils/pathUtils.js';
 ---
 
-<Layout title={ global_settings.title + " - Partenaires" }>
+<PageLayout title={ global_settings.title + " - Partenaires" }>
+  <SectionLayout id="partenaires" title={ partenaires.title }>
 
-  <section class="bs-container bs-mt-md">
-
-    <!-- Title -->
-    <h1 class="bs-h1 text-center">{ partenaires.title }</h1> 
-
-    <!-- Section de partenaire -->
     { partenaires.partners.map((tier) => (
       <div class="my-8 p-6 rounded-lg shadow-md" style={`color: ${tier.title_color}; background-color: ${tier.background}`}>
 
@@ -37,6 +33,5 @@ import { withBaseUrl } from '../utils/pathUtils.js';
       </div>
     )) }
 
-  </section>
-
-</Layout>
+  </SectionLayout>
+</PageLayout>
