@@ -50,7 +50,7 @@ const socialImage = withBaseUrl(global_settings.social_image);
     <a class="fixed -top-20 focus-visible:top-0 p-3 bg-black/90 transition-all duration-300" href="#main">Skip to content</a>
 
     <!-- bg image -->
-    <Image src={ bg_image } alt="" height={1080} width={1920} class="absolute min-h-svh object-cover inset-0 bottom-auto -z-1 w-full h-auto opacity-20 mask-b-from-50%" loading="eager" />
+    <Image src={ bg_image } alt="" height={1080} width={1920} class="absolute inset-0 -z-1 w-full h-full object-cover opacity-20 mask-b-from-50%" style="object-position: top center;" loading="eager" />
 
     <!-- Header -->
     <MainHeader settings={ global_settings } />
@@ -66,3 +66,21 @@ const socialImage = withBaseUrl(global_settings.social_image);
   </body>
 </html>
 
+<style>
+/* Sticky footer */
+:root, html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+main#main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+</style>
