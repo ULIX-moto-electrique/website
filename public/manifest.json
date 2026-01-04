@@ -4,7 +4,7 @@
   "name": "ULIX landing page",
   "description": "Site web du projet étudiant ULIX.",
   "short_name": "ULIX website",
-  "theme_color": "#18181B",
+  "theme_color": "#1B1818",
   "icons": [
     {
       "src": "/192.png",
