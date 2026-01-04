@@ -11,7 +11,7 @@ const socialIcons = {
 ---
 
 <footer class="@container bs-container mt-24 mb-8 font-semibold text-foreground-dark [&_a]:hover:text-foreground-light [&_a]:transition-color [&_a]:duration-150" id="contact">
-  <div class="bg-surface-2 p-4 md:p-8 rounded-xl flex justify-between gap-8">
+  <div class="bg-surface-3/10 p-4 md:p-8 rounded-xl flex justify-between gap-8">
     
     <!-- Left col -->
     <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-15 text-foreground-light">
@@ -25,7 +25,7 @@ const socialIcons = {
 
       <a
         href={settings.join_us_link}
-        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-accent text-background font-semibold text-sm shadow-md shadow-accent/20 transition-all duration-200 ease-out hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface-2"
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-accent-0 text-background font-semibold text-sm shadow-md shadow-accent-0/20 transition-all duration-200 ease-out hover:bg-accent-0/90 hover:shadow-lg hover:shadow-accent-0/30 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-0 focus-visible:ring-offset-2 focus-visible:ring-offset-white/10"
       >
         Rejoindre l’équipe
       </a>
@@ -40,7 +40,7 @@ const socialIcons = {
             const iconSvg = socialIcons[item.title] || socialIcons.Website
 
             return (
-              <a href={item.link} class="group flex! items-center gap-3 rounded-md px-3 py-2 text-foreground-light transition-all duration-200 hover:bg-surface-3">
+              <a href={item.link} class="group flex! items-center gap-3 rounded-md px-3 py-2 text-foreground-light transition-all duration-200 hover:bg-surface-2">
                 <span class="opacity-70 transition-all duration-200 group-hover:opacity-100 group-hover:scale-110 flex items-center justify-center" set:html={iconSvg} />
                 <span>{item.title}</span>
               </a>

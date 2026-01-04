@@ -4,25 +4,19 @@
   /* Custom font */
   --font-body: var(--font-syne), "ui-sans-serif", "system-ui", "sans-serif";
 
-  /* Brand color */
-  --color-accent: #e30513aa;
+  /* Brand color (main red and yellow) */
+  --color-accent-0: #e30513;
+  --color-accent-1: #ffc103;
 
-  /* Surfaces colors */
+  /* Surfaces colors (backgrounds) */
   --color-surface-0: #121212;
-  --color-surface-1: #18181b;
-  --color-surface-2: rgba(255, 255, 255, 0.03);
-  --color-surface-3: #2f2f31;
+  --color-surface-1: #1b1818;
+  --color-surface-2: #312f2f;
+  --color-surface-3: #666666;
 
-  /* Foreground colors */
+  /* Foreground colors (text) */
   --color-foreground-light: #eeeeee;
   --color-foreground-dark: #9f9f9f;
-
-  /* Utility colors */
-  --color-selection-text: #000000;
-  --color-selection-bg: #fcd34d;
-  --color-focus-ring: rgba(255, 255, 255, 0.75);
-  --color-neutral-white: #ffffff;
-  --color-neutral-black: #000000;
 
   /* Animations */
   --ease-bounce: linear(0,.01,.04 1.6%,.161 3.3%,.816 9.4%,1.046,1.189 14.4%,1.231,1.254 17%,1.259,1.257 18.6%,1.236,1.194 22.3%,1.057 27%,.999 29.4%,.955 32.1%,.942,.935 34.9%,.933,.939 38.4%,1 47.3%,1.011,1.017 52.6%,1.016 56.4%,1 65.2%,.996 70.2%,1.001 87.2%,1);
