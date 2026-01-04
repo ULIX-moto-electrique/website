@@ -11,7 +11,7 @@ import SectionLayout from '../layouts/SectionLayout.astro'
     { projets.map( item =>
       <article class="p-12 flex flex-col rounded-xl overflow-hidden bg-white/90 text-black/90">
         <div class="relative">
-          <h2 class="bs-h2">{ item.title }</h2>
+          <h2 class="ulix-h2">{ item.title }</h2>
           <div class="text-xl grow mt-4 " set:html={ item.content } />
         </div>
       </article>

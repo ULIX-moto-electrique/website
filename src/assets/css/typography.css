@@ -1,22 +1,22 @@
 @import "tailwindcss";
 @reference "./global.css";
 
-.bs-h1 {
+.ulix-h1 {
   @apply font-bold text-balance text-5xl md:text-6xl;
 }
 
-.bs-h2 {
+.ulix-h2 {
   @apply font-bold text-balance text-3xl md:text-4xl;
 }
 
-.bs-h3 {
+.ulix-h3 {
   @apply font-bold text-balance text-lg md:text-2xl;
 }
 
-.bs-h4 {
+.ulix-h4 {
   @apply font-bold text-balance text-base md:text-xl;
 }
 
-.bs-body-text {
+.ulix-body-text {
   @apply leading-relaxed;
 }

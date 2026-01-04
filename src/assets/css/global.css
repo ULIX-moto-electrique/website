@@ -32,7 +32,7 @@
 
 /* Apply word-break / hyphenation to all headings site-wide */
 h1, h2, h3, h4, h5, h6,
-.bs-h1, .bs-h2, .bs-h3, .bs-h4 {
+.ulix-h1, .ulix-h2, .ulix-h3, .ulix-h4 {
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;

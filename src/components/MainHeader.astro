@@ -20,7 +20,7 @@ const navItems = navigation.map((item) => {
 <header class="wrapper bg-loop font-semibold">
 
   <!-- Wrapper -->
-  <div class="bs-container py-6 flex justify-between items-center">
+  <div class="ulix-container py-6 flex justify-between items-center">
 
     <!-- Logo -->
     <a class="flex xl:min-w-32 group" href={ withBaseUrl('/') } aria-label={ settings.title + ' - Home' }>
@@ -36,7 +36,7 @@ const navItems = navigation.map((item) => {
       <nav class="hidden md:flex justify-end lg:gap-2 bg-neutral-500/50 rounded-md">
         { navItems.map((item) =>
           <a
-            class="bs-btn before:translate-y-full hover:before:translate-y-0"
+            class="ulix-btn before:translate-y-full hover:before:translate-y-0"
             href={ item.href }
             aria-current={ item.isActive ? 'page' : undefined }
             style={ item.isActive ? `background-color: var(--color-accent-0)` : `background-color: transparent` }

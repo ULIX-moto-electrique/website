@@ -4,10 +4,10 @@ const { id, title, horizontal = false } = Astro.props
 
 <section id={id}>
 
-  <div class={`bs-container bs-mt-lg flex gap-6 ${horizontal ? 'items-center section-layout-horizontal' : 'flex-col'}`}>
+  <div class={`ulix-container ulix-mt-lg flex gap-6 ${horizontal ? 'items-center section-layout-horizontal' : 'flex-col'}`}>
 
     <div class="pane-left">
-      <h1 class="bs-h1 text-center">{ title }</h1>
+      <h1 class="ulix-h1 text-center">{ title }</h1>
     </div>
 
     {horizontal ? <div class="separator" aria-hidden="true"></div> : null}

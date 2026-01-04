@@ -6,14 +6,14 @@ import SectionLayout from '../layouts/SectionLayout.astro'
 
 <SectionLayout id="about" title={title}>
 
-  <div class="bs-body-text text-center xl:text-xl flex flex-col gap-4 [&_p]:last:text-foreground-dark">
+  <div class="ulix-body-text text-center xl:text-xl flex flex-col gap-4 [&_p]:last:text-foreground-dark">
     <h2 set:html={ content }></h2>
   </div>
 
   <div class="my-4"></div>
 
   <div class="flex items-center justify-center">
-    <a href={ withBaseUrl('partenaires') } class="min-w-32 bs-btn">{ btn }</a>
+    <a href={ withBaseUrl('partenaires') } class="min-w-32 ulix-btn">{ btn }</a>
   </div>
 
 </SectionLayout>
