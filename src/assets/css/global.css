@@ -1,24 +1,32 @@
 @import "tailwindcss";
-@import "./colors.css";
 
 @theme {
-
+  /* Custom font */
   --font-body: var(--font-syne), "ui-sans-serif", "system-ui", "sans-serif";
 
-  --color-bs-surface-0: var(--color-surface-0);
-  --color-bs-surface-1: var(--color-surface-1);
-  --color-bs-surface-2: var(--color-surface-2);
-  --color-bs-surface-3: var(--color-surface-3);
+  /* Brand color */
+  --color-accent: #e30513aa;
 
-  --color-bs-foreground-light: var(--color-foreground-light);
-  --color-bs-foreground-dark: var(--color-foreground-dark);
-  --color-bs-accent: var(--color-accent);
+  /* Surfaces colors */
+  --color-surface-0: #121212;
+  --color-surface-1: #18181b;
+  --color-surface-2: rgba(255, 255, 255, 0.03);
+  --color-surface-3: #2f2f31;
 
-  --color-current: currentColor;
+  /* Foreground colors */
+  --color-foreground-light: #eeeeee;
+  --color-foreground-dark: #9f9f9f;
 
-  --ease-bs-bounce: linear(0,.01,.04 1.6%,.161 3.3%,.816 9.4%,1.046,1.189 14.4%,1.231,1.254 17%,1.259,1.257 18.6%,1.236,1.194 22.3%,1.057 27%,.999 29.4%,.955 32.1%,.942,.935 34.9%,.933,.939 38.4%,1 47.3%,1.011,1.017 52.6%,1.016 56.4%,1 65.2%,.996 70.2%,1.001 87.2%,1);
+  /* Utility colors */
+  --color-selection-text: #000000;
+  --color-selection-bg: #fcd34d;
+  --color-focus-ring: rgba(255, 255, 255, 0.75);
+  --color-neutral-white: #ffffff;
+  --color-neutral-black: #000000;
 
-  --ease-bs-spring: linear(
+  /* Animations */
+  --ease-bounce: linear(0,.01,.04 1.6%,.161 3.3%,.816 9.4%,1.046,1.189 14.4%,1.231,1.254 17%,1.259,1.257 18.6%,1.236,1.194 22.3%,1.057 27%,.999 29.4%,.955 32.1%,.942,.935 34.9%,.933,.939 38.4%,1 47.3%,1.011,1.017 52.6%,1.016 56.4%,1 65.2%,.996 70.2%,1.001 87.2%,1);
+  --ease-spring: linear(
     0, 0.009, 0.035 2.1%, 0.141, 0.281 6.7%, 0.723 12.9%, 0.938 16.7%, 1.017,
     1.077, 1.121, 1.149 24.3%, 1.159, 1.163, 1.161, 1.154 29.9%, 1.129 32.8%,
     1.051 39.6%, 1.017 43.1%, 0.991, 0.977 51%, 0.974 53.8%, 0.975 57.1%,

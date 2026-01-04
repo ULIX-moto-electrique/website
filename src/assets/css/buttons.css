@@ -5,8 +5,8 @@
 
   @apply
     active:translate-y-px
-    active:bg-bs-surface-2
-    bg-bs-surface-3
+    active:bg-surface-2
+    bg-surface-3
     duration-200
     focus-visible:outline-none
     focus-visible:ring-2
@@ -15,7 +15,7 @@
     px-5
     py-4
     rounded-md
-    text-bs-foreground-light
+    text-foreground-light
     text-center
     transition-all
     relative
