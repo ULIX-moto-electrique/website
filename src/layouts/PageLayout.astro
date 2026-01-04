@@ -5,8 +5,9 @@ import "../assets/css/typography.css";
 import "../assets/css/layout.css";
 import "../assets/css/buttons.css";
 
-import { Image, Font } from 'astro:assets';
+import { Font } from 'astro:assets';
 import bg_image from "../assets/theme-images/Boulons.png";
+import ImageLazyFadeIn from "../components/ImageLazyFadeIn.astro";
 
 import global_settings from "../data/global_settings.json";
 import { withBaseUrl } from '../utils/pathUtils.js';
@@ -49,8 +50,8 @@ const socialImage = withBaseUrl(global_settings.social_image);
     <!-- Skip link -->
     <a class="fixed -top-20 focus-visible:top-0 p-3 bg-black/90 transition-all duration-300" href="#main">Skip to content</a>
 
-    <!-- bg image -->
-    <Image src={ bg_image } alt="" height={1080} width={1920} class="absolute inset-0 -z-1 w-full h-full object-cover opacity-20 mask-b-from-50%" style="object-position: top center;" loading="eager" />
+    <!-- bg image (lazy + fade-in) -->
+    <ImageLazyFadeIn src={ bg_image } alt="" height={1080} width={1920} class="absolute inset-0 -z-1 w-full h-full object-cover mask-b-from-50%" style="object-position: top center;" />
 
     <!-- Header -->
     <MainHeader settings={ global_settings } />

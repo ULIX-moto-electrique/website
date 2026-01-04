@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+const { id, src, alt = '', height, width, class: className = '', style = '', loading = 'lazy', finalOpacity = 0.2 } = Astro.props;
+const uid = id ?? `bg-${Math.random().toString(36).slice(2,9)}`;
+---
+
+<div id={uid} class={`bg-image ${className}`} style={style}>
+  <Image
+    src={src}
+    alt={alt}
+    height={height}
+    width={width}
+    class="w-full h-full object-cover"
+    style={`${style ? style + ';' : ''}opacity:0;transition:opacity .3s ease;`}
+    loading={loading}
+    onload={`this.style.opacity='${String(finalOpacity)}'`}
+    onerror={`this.style.opacity='${String(finalOpacity)}'`}
+  />
+</div>
