@@ -1,18 +1,14 @@
 [
   {
-    "image": "slider-images/blackspike-wallpaper-01.avif",
-    "image_alt": "Placeholder for future image"
+    "image": "slider-images/stand.jpg",
+    "image_alt": "Exposition du club"
   },
   {
-    "image": "slider-images/blackspike-wallpaper-02.avif",
-    "image_alt": "Placeholder for future image"
+    "image": "slider-images/frame1.jpg",
+    "image_alt": "Photo du frame de la moto"
   },
   {
-    "image": "slider-images/blackspike-wallpaper-03.avif",
-    "image_alt": "Placeholder for future image"
-  },
-  {
-    "image": "slider-images/blackspike-wallpaper-04.avif",
-    "image_alt": "Placeholder for future image"
+    "image": "slider-images/frame2.jpg",
+    "image_alt": "Photo du frame de la moto"
   }
 ]

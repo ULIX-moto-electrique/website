@@ -44,35 +44,13 @@
       "title": "Argent",
       "title_color": "#232323",
       "background": "#F0F0F0AA",
-      "list": [
-        {
-          "title": "Placeholder",
-          "image": "logos-partenaires/placeholder.svg",
-          "link": "https://placehold.co/"
-        },
-        {
-          "title": "Placeholder",
-          "image": "logos-partenaires/placeholder.svg",
-          "link": "https://placehold.co/"
-        }
-      ]
+      "list": [ ]
     },
     {
       "title": "Bronze",
       "title_color": "#150D05",
       "background": "#DFAD7CAA",
-      "list": [
-        {
-          "title": "Placeholder",
-          "image": "logos-partenaires/placeholder.svg",
-          "link": "https://placehold.co/"
-        },
-        {
-          "title": "Placeholder",
-          "image": "logos-partenaires/placeholder.svg",
-          "link": "https://placehold.co/"
-        }
-      ]
+      "list": [ ]
     }
   ]
 }

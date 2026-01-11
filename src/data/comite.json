@@ -1,40 +1,58 @@
 {
   "members": [
     {
-      "name": "Alice Dupont",
-      "role": "Présidente",
-      "email": "alice.dupont@example.com",
-      "photo": "photos-comite/alice.jpg"
+      "name": "Lou Cloutier",
+      "role": "Directeur général",
+      "email": "lou.cloutier.1@ulaval.ca",
+      "photo": "photos-comite/Lou.jpg"
     },
     {
-      "name": "Marc Leroy",
-      "role": "Vice-président",
-      "email": "marc.leroy@example.com",
-      "photo": "photos-comite/marc.jpg"
+      "name": "Kylie Shan Boudreau",
+      "role": "Directrice aux partenariats et aux commandites",
+      "email": "ksbou3@ulaval.ca",
+      "photo": "photos-comite/Kylie.jpg"
     },
     {
-      "name": "Sophie Martin",
+      "name": "Megan Filion-Pruneau",
+      "role": "Directrice sociaux et communications",
+      "email": "mefip@ulaval.ca",
+      "photo": "photos-comite/Megan.jpg"
+    },
+    {
+      "name": "Marc-Antoine Carmichaël",
+      "role": "Directeur administratif",
+      "email": "marc-antoine.carmichael.1@ulaval.ca",
+      "photo": "photos-comite/Marco.jpg"
+    },
+    {
+      "name": "Maïka Lemelin",
       "role": "Trésorière",
-      "email": "sophie.martin@example.com",
-      "photo": "photos-comite/sophie.jpg"
+      "email": "maika.lemelin.1@ulaval.ca",
+      "photo": "photos-comite/Maika.jpg"
     },
     {
-      "name": "Youssef Ben",
-      "role": "Secrétaire",
-      "email": "youssef.ben@example.com",
-      "photo": "photos-comite/youssef.jpg"
-    },
-    {
-      "name": "Jessy Geri",
+      "name": "Edmond Gourmelen",
       "role": "Directeur mécanique",
-      "email": "jessy.geri@example.com",
-      "photo": "photos-comite/jessy.jpg"
+      "email": "edmond.gourmelen.1@ulaval.ca",
+      "photo": "photos-comite/Edmond.jpg"
     },
     {
-      "name": "Maurice Edith",
+      "name": "Jérémie Beaupré",
       "role": "Directeur électrique",
-      "email": "maurice.edith@example.com",
-      "photo": "photos-comite/maurice.jpg"
+      "email": "jeremie.beaupre.1@ulaval.ca",
+      "photo": "photos-comite/empty.jpg"
+    },
+    {
+      "name": "Malik Lienert-Pelletier",
+      "role": "Directeur mécanique",
+      "email": "malik.lienert-pelletier.1@ulaval.ca",
+      "photo": "photos-comite/Malik.jpg"
+    },
+    {
+      "name": "Antoine Blackburn",
+      "role": "Directeur mécanique",
+      "email": "antoine.blackburn.2@ulaval.ca",
+      "photo": "photos-comite/Antoine.jpg"
     }
   ]
 }
