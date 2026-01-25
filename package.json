@@ -6,7 +6,8 @@
     "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
-    "build:gh": "cross-env BASE_PATH=/ulix-website/ astro build",
+    "build:gh": "cross-env BASE_PATH=/website/ astro build",
+    "build:gh-mathou": "cross-env BASE_PATH=/ulix-website/ astro build",
     "preview": "astro preview",
     "astro": "astro",
     "deploy:gh": "npm run build:gh && node ./scripts/create-nojekyll.js && gh-pages -d dist --nojekyll --dotfiles"
