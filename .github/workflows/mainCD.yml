@@ -9,7 +9,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
   id-token: write
 
 jobs:
@@ -28,18 +27,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Configure git identity for gh-pages
+      - name: Configure git gh-pages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      - name: Configure remote to use token (avoid auth prompts)
-        run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
       - name: Deploy with gh-pages
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_TERMINAL_PROMPT: '0'
         run: npm run deploy
