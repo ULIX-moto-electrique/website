@@ -4,16 +4,15 @@ Site web officiel d'ULIX
 
 ## Guide
 
-### Comment modifier les fichiers du site web ?
-
-La première méthode consiste à utiliser l'interface web de GitHub directement : cela convient pour de petites modifications, mais présente un risque d'erreurs plus élevé.
-
-L'autre méthode consiste à cloner ce dépôt (comme pour les TP du cours de Python), soit avec GitHub Desktop, soit en ligne de commande.
-
 ### Comment ajouter un partenaire ?
 
-1. Ajouter le logo dans le dossier `public/logos-partenaires`.
+1. Ajouter le logo dans le dossier `public/logos-partenaires`. \
+S'assurer que le format est en svg si possible pour une meilleure qualité, sinon webp, sinon png/jpg.
+<img alt="image" src="docs/upload-logo1.png" />
+
 2. Ajouter les informations du partenaire dans le fichier `src/data/partenaires.json`.
+<img alt="image" src="docs/upload-logo2.png" />
+<img alt="image" src="docs/upload-logo3.png" />
 
 ### Comment modifier les membres du comité administratif ?
 
