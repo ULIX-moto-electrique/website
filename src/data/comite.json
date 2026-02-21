@@ -19,12 +19,6 @@
       "photo": "photos-comite/Megan.jpg"
     },
     {
-      "name": "Marc-Antoine Carmichaël",
-      "role": "Directeur administratif",
-      "email": "marc-antoine.carmichael.1@ulaval.ca",
-      "photo": "photos-comite/Marco.jpg"
-    },
-    {
       "name": "Maïka Lemelin",
       "role": "Trésorière",
       "email": "maika.lemelin.1@ulaval.ca",
@@ -37,10 +31,10 @@
       "photo": "photos-comite/Edmond.jpg"
     },
     {
-      "name": "Jérémie Beaupré",
+      "name": "Tristan Benoît",
       "role": "Directeur électrique",
-      "email": "jeremie.beaupre.1@ulaval.ca",
-      "photo": "photos-comite/empty.jpg"
+      "email": "tristan.benoit.1@ulaval.ca",
+      "photo": "photos-comite/Tristan.jpeg"
     },
     {
       "name": "Malik Lienert-Pelletier",
