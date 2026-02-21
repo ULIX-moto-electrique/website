@@ -7,24 +7,14 @@
       "background": "#F3F4F6AA",
       "list": [
         {
-          "title": "Agnico Eagle",
-          "image": "logos-partenaires/agnico-eagle.svg",
-          "link": "https://www.agnicoeagle.com/French/overview/default.aspx"
+          "title": "Creaform Ametek",
+          "image": "logos-partenaires/creaform-ametek.png",
+          "link": "https://www.creaform3d.com/?sc_lang=fr"
         },
         {
-          "title": "AESGUL",
-          "image": "logos-partenaires/aesgul.webp",
-          "link": "https://www.aesgul.com/"
-        },
-        {
-          "title": "Université Laval",
-          "image": "logos-partenaires/ulaval.svg",
-          "link": "https://www.ulaval.ca/"
-        },
-        {
-          "title": "simard Suspensions Inc.",
-          "image": "logos-partenaires/simard.svg",
-          "link": "https://www.simardsuspensions.com/en/"
+          "title": "FSG Université Laval",
+          "image": "logos-partenaires/UL-FSG-C-s.png",
+          "link": "https://www.fsg.ulaval.ca/"
         }
       ]
     },
@@ -34,6 +24,11 @@
       "background": "#FFF4D9AA",
       "list": [
         {
+          "title": "AESGUL",
+          "image": "logos-partenaires/aesgul.webp",
+          "link": "https://www.aesgul.com/"
+        },
+        {
           "title": "onshape",
           "image": "logos-partenaires/onshape.svg",
           "link": "https://www.onshape.com/fr/"
@@ -42,6 +37,16 @@
           "title": "Atkins Réalis",
           "image": "logos-partenaires/AtkinsRealis.png",
           "link": "https://www.atkinsrealis.com/"
+        },
+        {
+          "title": "Stantec",
+          "image": "logos-partenaires/Stantec.png",
+          "link": "https://www.stantec.com/fr"
+        },
+        {
+          "title": "Stantec",
+          "image": "logos-partenaires/Stantec.png",
+          "link": "https://www.stantec.com/fr"
         }
       ]
     },
@@ -49,13 +54,30 @@
       "title": "Argent",
       "title_color": "#232323",
       "background": "#F0F0F0AA",
-      "list": [ ]
+      "list": [
+        {
+          "title": "Ansys",
+          "image": "logos-partenaires/Ansys.png",
+          "link": "https://www.ansys.com/"
+        },
+        {
+          "title": "MotoSPEC",
+          "image": "logos-partenaires/MotoSPEC.png",
+          "link": "https://www.motospec.ca/"
+        },
+      ]
     },
     {
       "title": "Bronze",
       "title_color": "#150D05",
       "background": "#DFAD7CAA",
-      "list": [ ]
+      "list": [
+        {
+          "title": "Innovair Solutions",
+          "image": "Innovair-Solutions-logo.png",
+          "link": "https://www.innovairsolutions.com/fr-ca/default.aspx"
+        }
+      ]
     }
   ]
 }
