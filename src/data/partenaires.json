@@ -15,7 +15,12 @@
           "title": "FSG Université Laval",
           "image": "logos-partenaires/UL-FSG-C-s.png",
           "link": "https://www.fsg.ulaval.ca/"
-        }
+        },
+        {
+          "title": "Inovmetric",
+          "image": "logos-partenaires/innovmetric.png",
+          "link": "https://www.polyworks.com/en-us"
+        },
       ]
     },
     {
@@ -64,6 +69,16 @@
           "title": "MotoSPEC",
           "image": "logos-partenaires/MotoSPEC.png",
           "link": "https://www.motospec.ca/"
+        },
+        {
+          "title": "Torngats",
+          "image": "logos-partenaires/Torngats.png",
+          "link": "https://torngats.ca/"
+        },
+        {
+          "title": "Techsol Marine",
+          "image": "logos-partenaires/Techsol_Marine.png",
+          "link": "https://techsolmarine.com/"
         }
       ]
     },
@@ -76,6 +91,11 @@
           "title": "Innovair Solutions",
           "image": "logos-partenaires/Innovair-Solutions-logo.png",
           "link": "https://www.innovairsolutions.com/fr-ca/default.aspx"
+        },
+        {
+          "title": "Inogeni",
+          "image": "logos-partenaires/innogeni.png",
+          "link": "https://inogeni.com/"
         }
       ]
     }
