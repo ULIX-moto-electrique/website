@@ -14,7 +14,7 @@
     },
     {
       "name": "Megan Filion-Pruneau",
-      "role": "Directrice sociaux et communications",
+      "role": "Directrice des événements sociaux et communications",
       "email": "mefip@ulaval.ca",
       "photo": "photos-comite/Megan.jpg"
     },
@@ -43,10 +43,10 @@
       "photo": "photos-comite/Malik.jpg"
     },
     {
-      "name": "Antoine Blackburn",
-      "role": "Directeur mécanique",
+      "name": "Saad Assabar",
+      "role": "Directeur de la Sécurité et des Opérations",
       "email": "antoine.blackburn.2@ulaval.ca",
-      "photo": "photos-comite/Antoine.jpg"
+      "photo": "photos-comite/empty.jpg"
     }
   ]
 }
