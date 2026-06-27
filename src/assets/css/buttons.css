@@ -1,6 +1,70 @@
 @import "tailwindcss";
 @reference "./global.css";
 
+
+.ulix-btn-join {
+  @apply
+    inline-flex
+    items-center
+    gap-2
+    px-5
+    py-2.5
+    rounded-lg
+    bg-accent-0
+    text-foreground-light
+    font-semibold
+    text-sm
+    shadow-md
+    shadow-accent-0/20
+    transition-all
+    duration-200
+    ease-out
+    hover:bg-accent-0/90
+    hover:shadow-lg
+    hover:shadow-accent-0/30
+    hover:-translate-y-0.5
+    focus:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-accent-0
+    focus-visible:ring-offset-2
+    focus-visible:ring-offset-white/10
+    ;
+}
+
+.ulix-btn-primary {
+  @apply
+    active:translate-y-px
+    active:bg-white/10
+    duration-200
+    focus-visible:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-white/75
+    font-semibold
+    px-5
+    py-4
+    rounded-md
+    bg-accent-0
+    text-foreground-light
+    text-center
+    transition-all
+    relative
+    overflow-clip
+    before:flex
+    before:inset-0
+    before:bg-white
+    before:rounded-sm
+    before:absolute
+    before:opacity-0
+    before:translate-y-full
+    before:transition-all
+    before:duration-300
+    before:ease-out
+    hover:before:translate-y-0
+    hover:before:opacity-10
+    active:before:opacity-0
+    ;
+}
+
 .ulix-btn {
   @apply
     active:translate-y-px

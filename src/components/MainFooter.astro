@@ -33,12 +33,14 @@ const year = new Date().getFullYear()
         />
       </a>
 
-      <a
-        href={settings.join_us_link}
-        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-accent-0 text-background font-semibold text-sm shadow-md shadow-accent-0/20 transition-all duration-200 ease-out hover:bg-accent-0/90 hover:shadow-lg hover:shadow-accent-0/30 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-0 focus-visible:ring-offset-2 focus-visible:ring-offset-white/10"
-      >
-        Rejoindre l’équipe
-      </a>
+      <div class="flex flex-col gap-3">
+        <a href={settings.join_us_link} class="ulix-btn-join">
+          Rejoindre l’équipe
+        </a>
+        <a href="mailto:ulix@asso.ulaval.ca" class="ulix-btn-join">
+          Devenir partenaire
+        </a>
+      </div>
     </div>
 
     <!-- Right col -->
