@@ -8,7 +8,11 @@
     "image_alt": "Photo d'une soirée de travail"
   },
   {
-    "image": "slider-images/frame2.jpg",
-    "image_alt": "Photo du frame de la moto"
+    "image": "slider-images/Photo_equipe.jpg",
+    "image_alt": "Photo d'équipe"
+  },
+  {
+    "image": "slider-images/Stand2.jpg",
+    "image_alt": "Exposition du club"
   }
 ]
