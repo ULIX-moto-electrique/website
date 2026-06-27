@@ -2,6 +2,8 @@
 import Logo from '../assets/theme-images/logo.svg'
 import LinkedInIcon from '../assets/theme-images/social-linkedIn.svg'
 import InstagramIcon from '../assets/theme-images/social-instagram.svg'
+import FacebookIcon from '../assets/theme-images/social-facebook.svg'
+import EmailIcon from '../assets/theme-images/social-email.svg'
 import WebsiteIcon from '../assets/theme-images/social-unknown.svg'
 
 const { settings } = Astro.props
@@ -9,8 +11,13 @@ const { settings } = Astro.props
 const socialIcons = {
   LinkedIn: LinkedInIcon,
   Instagram: InstagramIcon,
+  Facebook: FacebookIcon,
+  Courriel: EmailIcon,
   Website: WebsiteIcon
 }
+
+const credits = settings.credits
+const year = new Date().getFullYear()
 ---
 
 <footer class="@container ulix-container mt-24 mb-8 font-semibold text-foreground-dark [&_a]:hover:text-foreground-light [&_a]:transition-color [&_a]:duration-150" id="contact">
@@ -38,7 +45,6 @@ const socialIcons = {
     <div class="flex flex-wrap gap-4 md:justify-end">
       <nav class="flex flex-col gap-1 items-end">
         {settings.social_links
-          .sort((a, b) => a.title.localeCompare(b.title))
           .map(item => {
             const Icon = socialIcons[item.title] || socialIcons.Website
 
@@ -52,4 +58,15 @@ const socialIcons = {
       </nav>
     </div>
   </div>
+
+  {credits && (
+    <div class="flex flex-wrap justify-between items-center gap-2 px-2 pt-4 text-sm font-medium">
+      <span>© {year} {credits.copyright}.</span>
+      <span>
+        {credits.template_author && <>
+          Gabarit par <a href={credits.template_link} target="_blank" rel="noreferrer noopener">{credits.template_author}</a>
+        </>}.
+      </span>
+    </div>
+  )}
 </footer>
