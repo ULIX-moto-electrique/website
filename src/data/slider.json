@@ -1,11 +1,11 @@
 [
   {
-    "image": "slider-images/stand.jpg",
-    "image_alt": "Exposition du club"
-  },
-  {
     "image": "slider-images/Travail_equipe.png",
     "image_alt": "Photo d'une soirée de travail"
+  },
+  {
+    "image": "slider-images/stand.jpg",
+    "image_alt": "Exposition du club"
   },
   {
     "image": "slider-images/Photo_equipe.jpg",
