@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, fontProviders } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
 import { ensureTrailingSlash } from './src/utils/pathUtils.js'
 
@@ -9,11 +9,11 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  experimental: {
-    fonts: [{
-      provider: "local",
-      name: "syneLocal",
-      cssVariable: "--font-syne",
+  fonts: [{
+    provider: fontProviders.local(),
+    name: "syneLocal",
+    cssVariable: "--font-syne",
+    options: {
       variants: [
         {
           weight: 400,
@@ -31,6 +31,6 @@ export default defineConfig({
           src: ["./src/assets/fonts/Syne-Bold.woff2"]
         }
       ]
-    }]
-  }
+    }
+  }]
 })
