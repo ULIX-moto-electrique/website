@@ -47,6 +47,12 @@
       "role": "Directeur de la Sécurité et des Opérations",
       "email": "britany.bonneville.1@ulaval.ca",
       "photo": "photos-comite/Britany_crop.jpeg"
+    },
+    {
+      "name": "Xavier Chapados",
+      "role": "Directeur de l'administration",
+      "email": "xavier.chapados.1@ulaval.ca",
+      "photo": "photos-comite/Xavier_crop.jpeg"
     }
   ]
 }
